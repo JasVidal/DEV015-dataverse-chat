@@ -1,15 +1,31 @@
 // En este archivo definirás tus rutas e importarás los componentes que vas a renderizar.
 
-/*
-import Example from './views/Example.js';
+import seccTarjetas from './views/Tarjetas.js';
+// ... import other views
+import { setRootEl, setRoutes /*onURLChange*/ } from './router.js';
 
-Ejemplo de definición de rutas:
-
+// Define your routes and their associated views
 const routes = {
-    "/": Example,
-    ...
-}
-*/
+  '/': seccTarjetas
+  // ...
+};
+
+// Assign the routes
+setRoutes(routes);
+
+// Set the root element where views will be rendered
+window.addEventListener("DOMContentLoaded", () => {
+  console.log(seccTarjetas())
+  document.getElementById('root').appendChild(seccTarjetas());
+  setRootEl(document.querySelector('#root'));
+  /*onURLChange(window.location);*/
+});
+
+/*
+// Set the root element where views will be rendered
+window.addEventListener("DOMContentLoaded", () => {
+  setRootEl(/* root element );
+}); */
 
 /*
 TODO:
