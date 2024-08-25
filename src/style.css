@@ -186,6 +186,7 @@
   }
   
   #conocelos-btn {
+    cursor: pointer;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -218,6 +219,10 @@
     gap: 1rem;
     background-color: #F0D8FF;
   }
+
+  .boton-filtros{
+    cursor: pointer;
+  }
   
   .opciones-mascota {
     width: auto;
@@ -238,21 +243,12 @@
     margin-right: 5px;
   }
   
-  select[name='ordenar'] {
-    background-color: #ED8A0A;
-    border-radius: 2em;
-    border: none;
-    padding-top: 0.4em;
-    padding-left: 1.1em;
-    padding-right: 1.1em;
-    padding-bottom: 0.4em;
-    color:#ffffff;
-    text-align: center;
-    font-family: 'Josefin Sans';
-    font-size: 0.8em;
+  input[name='sort-order'] {
+    cursor: pointer;
   }
   
   #btn-estadísticas {
+    cursor: pointer;
     background-color: #ff961df6;
     border-radius: 2em;
     border: none;
@@ -267,6 +263,7 @@
   }
   
   #btn-limpiar {
+    cursor: pointer;
     background-color: #f3ce00;
     margin: 20px 0px 0px 0px;
     border-radius: 2em;
@@ -512,6 +509,7 @@
   }
   
   #sumate-btn {
+    cursor: pointer;
     margin-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -619,6 +617,7 @@
   }
   
   #enviar {
+    cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -732,6 +731,7 @@
   }
   
   #contactanos-btn {
+    cursor: pointer;
     margin-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
@@ -857,6 +857,7 @@
   }
   
   #donar-btn {
+    cursor: pointer;
     margin-top: 2em;
     margin-left: 1em;
     align-items: center;
@@ -961,6 +962,7 @@
   }
   
   .btn-close2 {
+    cursor: pointer;
     margin-top: 10px;
   }
   
@@ -1153,6 +1155,7 @@
   }
   
   #conocelos-btn {
+    cursor: pointer;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1206,6 +1209,7 @@
   }
   
   #btn-estadísticas {
+    cursor: pointer;
     background-color: #ED8A0A;
     cursor: pointer;
     border-radius: 2em;
@@ -1220,6 +1224,7 @@
   }
   
   #btn-limpiar {
+    cursor: pointer;
     background-color: #f3ce00;
     margin: 50px 0px 0px 0px;
     border-radius: 2em;
@@ -1249,7 +1254,10 @@
     font-family: 'Josefin Sans';
   }
   
-  
+  input[name='sort-order'] {
+    cursor: pointer;
+  }
+
   select[name='elegir'] {
     background-color: #5C2E80;
     border-radius: 2em;
@@ -1401,6 +1409,7 @@
   }
   
   .btn-close2 {
+    cursor: pointer;
     margin-top: 10px;
   }
   
@@ -1489,6 +1498,7 @@
   }
   
   #sumate-btn {
+    cursor: pointer;
     margin-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1714,6 +1724,7 @@
   }
   
   #contactanos-btn {
+    cursor: pointer;
     margin-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1828,6 +1839,7 @@
   }
   
   #donar-btn {
+    cursor: pointer;
     margin-top: 3em;
     padding-left: 20px;
     padding-right: 20px;
