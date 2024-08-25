@@ -4,6 +4,10 @@ const seccTarjetas = () => {
   tarjetas.id = "tarjetas-section";
   tarjetas.innerHTML = `
 
+<!-- Desktop Tarjetas -->
+
+    <section class="mascotas-container" id="tarjetas-section">
+
       <div class="mascotas-barra">
         <ul class="opciones-mascota">
           <li class="boton-filtros"><i class="fa-solid fa-bars" id="bars-2"></i>Filtros</li>

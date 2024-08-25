@@ -3,7 +3,10 @@ const seccRegistrate = () => {
     registrate.className = "registrate";
     registrate.innerHTML = `
   
-        <div class="registrate-izquierda">
+<!-- Desktop Regístrate -->
+ 
+    <section class="registrate">
+      <div class="registrate-izquierda">
         <div class="txt-registrate">
           <h1>Regístrate</h1>
           <p>Déjanos todos tus datos en nuestro formulario y nos pondremos en contacto contigo lo más pronto posible.</p>

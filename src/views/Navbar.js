@@ -1,6 +1,8 @@
 const seccNavbar = () => {
   const navbar = document.createElement('header');
-  navbar.innerHTML = `<!----------------------- Mobile Structure ----------------------->
+  navbar.innerHTML = `
+  
+<!----------------------- Mobile Structure ----------------------->
 
 
 <!-- Mobile Sidebar -->

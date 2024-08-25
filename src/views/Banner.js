@@ -3,7 +3,11 @@ const seccBanner = () => {
     banner.className = "banner";
     banner.innerHTML = `
   
-        <div class="izquierda">
+<!-- Desktop Banner -->
+
+  <main>
+    <section class="banner">
+      <div class="izquierda">
           <img class="img-banner" src="./assets/img banner 1.png">
           <img class="vector" src="./assets/Circulo banner 1.svg">
       </div>
