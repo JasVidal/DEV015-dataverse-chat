@@ -1,5 +1,5 @@
 const seccFooter = () => {
-    const footer = document.createElement('section');
+    const footer = document.createElement('footer');
     footer.className = "footer";
     footer.innerHTML = `
   

@@ -2,11 +2,14 @@
 import seccNavbar from './views/Navbar.js';
 import seccBanner from './views/Banner.js';
 import seccTarjetas from './views/Tarjetas.js';
+import { renderItems } from './views/TarjetaContenido.js';
+import petsData from './data/dataset.js';
 import seccNosotros from './views/Nosotros.js';
 import seccRegistrate from './views/Registrate.js';
 import seccVisitanos from './views/Visitanos.js';
 import seccDonaciones from './views/Donaciones.js';
 import seccFooter from './views/Footer.js';
+
 
 
 // ... import other views
@@ -44,6 +47,17 @@ window.addEventListener("DOMContentLoaded", () => {
   setRootEl(document.querySelector('#root'));
   /*onURLChange(window.location);*/
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('root').appendChild(renderItems());
+  setRootEl(document.querySelector('#root'));
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('root').appendChild(petsData());
+  setRootEl(document.querySelector('#root'));
+});
+
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById('root').appendChild(seccNosotros());
