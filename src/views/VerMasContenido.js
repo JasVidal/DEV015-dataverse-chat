@@ -3,6 +3,7 @@ const seccVerMas = () => {
     verMas.className = "verMas-contenido";
     verMas.innerHTML = `
             <div class="verMas-container">
+            <i class="fa-solid fa-circle-xmark></i>
                 <div class="verMas-izquierda">
                         <div itemprop="tarjeta-img">
                             <img class="tarjeta-img" src="${pet.imageUrl}" alt="${pet.name}">

@@ -1,0 +1,40 @@
+.verMas.container{
+    width: auto;
+    height: auto;
+    color: #FFBE1B,
+}
+
+i .circle-xmark {
+    color: #ffffff;
+    display: flex;
+    justify-content: right;
+    vertical-align: top;
+}
+
+.nosotros-izquierda {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+    margin-left: 6.5em;
+    text-align: center;
+    z-index: 19;
+  }
+
+  .nosotros-derecha {
+    width: 50%;
+    height: 470px;
+    text-align: center;
+    z-index: 19;
+    margin-top: -130px;
+  }
+
+  .img-nosotros {
+    z-index: 19;
+    width: auto;
+    height: 220px;
+    margin-right: 110px;
+    margin-top: -5px;
+  }
+

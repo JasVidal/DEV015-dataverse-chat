@@ -599,6 +599,7 @@
   }
   
   .form input {
+    cursor: auto;
     background-color: #FF2828;
     border-radius: 2em;
     border: none;
@@ -618,8 +619,8 @@
   
   #enviar {
     cursor: pointer;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.2em;
@@ -628,6 +629,7 @@
     border: none;
     margin-top: 2em;
     font-family: "Cherry Bomb One";
+    text-align: center;
   }
   
   /* Visítanos */
@@ -1593,6 +1595,7 @@
   }
   
   .form input {
+    cursor: auto;
     background-color: #FF2828;
     border-radius: 2em;
     border: none;
@@ -1612,6 +1615,7 @@
   }
   
   #enviar {
+    cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
