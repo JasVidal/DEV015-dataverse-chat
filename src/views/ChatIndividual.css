@@ -11,7 +11,7 @@ i .circle-xmark {
     vertical-align: top;
 }
 
-.nosotros-izquierda {
+.verMas-izquierda {
     width: 70%;
     height: 500px;
     display: flex;
@@ -22,19 +22,20 @@ i .circle-xmark {
     z-index: 19;
   }
 
-  .nosotros-derecha {
-    width: 50%;
+  .verMas-derecha {
+    width: 30%;
     height: 470px;
     text-align: center;
     z-index: 19;
     margin-top: -130px;
   }
 
-  .img-nosotros {
+  .verMas-img {
     z-index: 19;
     width: auto;
     height: 220px;
     margin-right: 110px;
     margin-top: -5px;
   }
+
 

@@ -31,7 +31,7 @@ export const renderView = (pathname, props = {}) => {
   rootEl.innerHTML = '';
 
   if (ROUTES === pathname [props]) {
-    rootEl.innerHTML = pathname["/Banner"]
+    rootEl.innerHTML = pathname["/Home"]
   };
   
   const verContenido = verFuncion(props);
@@ -42,13 +42,7 @@ export const onURLChange = (location) => {
   // parse the location for the pathname and search params
   // convert the search params to an object
   // render the view with the pathname and object
-const convParamsBusquedaemObjeto = (search) => {
-  const parametros = new URLSearchParams(search);
-  const objeto = {};
-  parametros.forEach((value, key) => {
-    objeto[key] = value;
-  });
-  return objeto;
+
 }
 
   const pathname = location.pathname;

@@ -1,4 +1,4 @@
-const seccTarjetas = () => {
+const Home = () => {
   const tarjetas = document.createElement('section');
   tarjetas.className = "mascotas-container";
   tarjetas.id = "tarjetas-section";
@@ -83,4 +83,4 @@ const seccTarjetas = () => {
   return tarjetas;
 }
 
-export default seccTarjetas;
+export default Home;

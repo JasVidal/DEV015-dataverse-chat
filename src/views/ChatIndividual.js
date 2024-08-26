@@ -1,12 +1,12 @@
 const seccVerMas = () => {
-    const verMas = document.createElement('section');
+    constverMas = document.createElement('section');
     verMas.className = "verMas-contenido";
     verMas.innerHTML = `
             <div class="verMas-container">
             <i class="fa-solid fa-circle-xmark></i>
                 <div class="verMas-izquierda">
-                        <div itemprop="tarjeta-img">
-                            <img class="tarjeta-img" src="${pet.imageUrl}" alt="${pet.name}">
+                        <div itemprop="verMas-img">
+                            <img class="verMas-img" src="${pet.imageUrl}" alt="${pet.name}">
                 </div>
                 <div class="verMas-derecha">
                         <div itemprop="name">${pet.name}</div>

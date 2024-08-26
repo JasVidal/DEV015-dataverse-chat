@@ -555,12 +555,9 @@
   }
   
   .vector-registrate {
-    position: absolute;
-    width: 100%;
-    height: 450px;
-    margin-top: 200px;
-    margin-left: -306px;
+    width: 65%;
     z-index: -300;
+    position: absolute;
   }
   
   .img-registrate {
@@ -595,7 +592,13 @@
   }
   
   .form {
-    margin-top: 16em;
+    width: 100%;
+    height: auto;
+    margin-top: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .form input {
@@ -1539,20 +1542,17 @@
     width: 30%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
-    height: 700px;
-    text-align: right;
+    justify-content: center;
+    height: 720px;
+    text-align: left;
     z-index: 10;
-    margin-top: -80px;
-    text-align: right;
+    text-align: left;
   }
   
   .vector-registrate {
-    width: 100%;
-    height: 450px;
-    margin-top: 170px;
-    margin-right: -300px;
+    width: 30%;
     z-index: -300;
+    position: absolute;
   }
   
   .img-registrate {
@@ -1589,9 +1589,13 @@
   }
   
   .form {
+    width: 100%;
+    height: auto;
     margin-top: 15em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .form input {
@@ -1607,7 +1611,6 @@
     font-family: 'Josefin Sans';
     line-height: 2em;
     margin-top: 2em;
-    margin-right: 19em;
   }
   
   .form input::placeholder {
@@ -1625,7 +1628,6 @@
     background: transparent;
     border: none;
     margin-top: 1em;
-    margin-right: 13.5em;
     font-family: "Cherry Bomb One";
   }
   
