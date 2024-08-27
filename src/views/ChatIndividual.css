@@ -1,4 +1,4 @@
-.verMas.container{
+.individual.container{
     width: auto;
     height: auto;
     color: #FFBE1B,
@@ -11,7 +11,7 @@ i .circle-xmark {
     vertical-align: top;
 }
 
-.verMas-izquierda {
+.individual-izquierda {
     width: 70%;
     height: 500px;
     display: flex;
@@ -22,7 +22,7 @@ i .circle-xmark {
     z-index: 19;
   }
 
-  .verMas-derecha {
+  .individual-derecha {
     width: 30%;
     height: 470px;
     text-align: center;
@@ -30,7 +30,7 @@ i .circle-xmark {
     margin-top: -130px;
   }
 
-  .verMas-img {
+  .individual-img {
     z-index: 19;
     width: auto;
     height: 220px;

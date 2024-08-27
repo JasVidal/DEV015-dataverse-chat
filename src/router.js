@@ -7,9 +7,9 @@ export const setRootEl = (el) => {
 }
 
 export const setRoutes = (routes) => {
-  // optional Throw errors if routes isn't an object
-  // optional Throw errors if routes doesn't define an /error route
-  // assign ROUTES | !== -> desigualdad estricta / || -> y
+  // Opcional: arroja errores si las rutas no son un objeto
+  // Opcional: arrojar errores si las rutas no definen una ruta /error
+  // asignar RUTAS | !== -> desigualdad estricta / || -> o
   if (typeof routes !== "object" || routes === null) {
     throw new Error("Routes debe ser un objeto");
   }
@@ -21,48 +21,39 @@ export const setRoutes = (routes) => {
   return ROUTES = routes;
 }
 
-export const renderView = (pathname, props = {}) => {
+const renderView = (pathname, props = {}) => {
 
-  // clear the root element
-  // find the correct view in ROUTES for the pathname
-  // in case not found render the error view
-  // render the correct view passing the value of props
-  // add the view element to the DOM root element
-  rootEl.innerHTML = '';
+  // limpia el elemento root
+  // busque la vista correcta en RUTAS para la ruta pathname
+  // en caso de no encontrarlo renderiza la vista de error
+  // renderiza la vista correcta pasando el valor de las propiedades
+  // agrega el elemento de vista al elemento root del DOM
+  root.innerHTML = '';
 
-  if (ROUTES === pathname [props]) {
-    rootEl.innerHTML = pathname["/Home"]
-  };
-  
-  const verContenido = verFuncion(props);
-  rootEl.innerHTML = verContenido;
+  if (ROUTES[pathname]) {
+    root.replaceChildren(ROUTES[pathname]());
+  }
+    else {
+      root.replaceChildren(ROUTES["/Error"]());
+    }
 };
 
 export const onURLChange = (location) => {
-  // parse the location for the pathname and search params
-  // convert the search params to an object
-  // render the view with the pathname and object
+  // analiza la ubicación de la ruta y los parámetros de búsqueda
+  // convierte los parámetros de búsqueda en un objeto
+  // renderiza la vista con la ruta y el objeto
 
+  const { pathname, search } = location;
+  const props = queryStringToObject(search);
+  renderView(pathname, props);
 }
 
-  const pathname = location.pathname;
-  const buscarParamsObjeto = convParamsBusquedaemObjeto(location.search);
 
-  renderView(pathname, buscarParamsObjeto);
-}
-
-export const queryStringToObject = (queryString) => {
+  const queryStringToObject = (queryString) => {
   // convert query string to URLSearchParams
   // convert URLSearchParams to an object
   // return the object
-  const parametros = new URLSearchParams(queryString);
-  const objeto = {};
-  parametros.forEach((value, key) => {
-    objeto[key] = value;
-  });
-  return objeto;
 }
-
 
 export const navigateTo = (pathname, props={}) => {
   // update window history with pushState

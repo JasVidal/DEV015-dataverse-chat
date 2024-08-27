@@ -1,14 +1,12 @@
-const seccVerMas = () => {
-    constverMas = document.createElement('section');
-    verMas.className = "verMas-contenido";
-    verMas.innerHTML = `
-            <div class="verMas-container">
+const seccIndividual = () => {
+    const individual = document.createElement('section');
+    individual.className = "individual-contenido";
+    individual.innerHTML = `
+            <div class="individual-container">
             <i class="fa-solid fa-circle-xmark></i>
-                <div class="verMas-izquierda">
-                        <div itemprop="verMas-img">
-                            <img class="verMas-img" src="${pet.imageUrl}" alt="${pet.name}">
-                </div>
-                <div class="verMas-derecha">
+                <div class="individual-izquierda">
+                        <div itemprop="individual-img">
+                            <img class="individual-img" src="${pet.imageUrl}" alt="${pet.name}">
                         <div itemprop="name">${pet.name}</div>
                         <div itemprop="description">${pet.description}</div>
                         <div itemprop="age">Edad: ${ageDisplay}</div>
@@ -18,11 +16,14 @@ const seccVerMas = () => {
                         <div itemprop="temperament">Comportamiento: ${pet.facts.temperament}</div>
                         <div itemprop="curiosities">Curiosidades: ${pet.extraInfo.curiosities}</div>
                 </div>
+                <div class="individual-derecha">
+                        
+                </div>
         </section>
                     `;
     section.appendChild(petItem);
 
-return section;
+return individual;
 }
 
-export default seccVerMas;
+export default seccIndividual;
