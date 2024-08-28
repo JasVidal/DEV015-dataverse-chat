@@ -1,5 +1,5 @@
 /* Manipulación de datos */
-import petsData from './data/dataset.js';
+import petsData from '../data/dataset.js';
 
 const dataFunctions = {
 

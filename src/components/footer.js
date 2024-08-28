@@ -12,7 +12,7 @@ const seccFooter = () => {
     <div class="center-column">
       <h3>Salva una vida</h3>
       <img src="./assets/Logo.svg">
-      <a class="name">JASMIN VIDAL - ANA SOTO 2024</a>
+      <a class="name">© JASMIN VIDAL 2024</a>
     </div>
     <div class="column">
       <div class="icon">

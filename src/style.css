@@ -5,6 +5,10 @@
 * {
     margin: 0px;
   }
+
+  header .fa-paw {
+    color: #ffffff;
+  }
   
   header h1 {
     width: auto;
@@ -433,6 +437,49 @@
   
   div .description {
     text-align: center;
+  }
+
+  .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.5em 0em 1.5em 0em;
+  }
+
+  #ver-mas{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-top: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.8em;
+    text-align: center;
+    border: none;
+    border-radius: 2em;
+    background-color: #ED8A0A;
+  }
+
+  #chat{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-top: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.8em;
+    text-align: center;
+    border: none;
+    border-radius: 2em;
+    background-color: #ED8A0A;
+  }
+
+  .tarjeta .fa-circle-plus {
+    color: #ffffff;
+  }
+
+  .tarjeta .fa-comment {
+    color: #ffffff;
   }
   
   /* Nosotros */

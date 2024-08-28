@@ -77,6 +77,9 @@ const seccTarjetas = () => {
         <img class="img-hueso3" src="./assets//hueso.png">
         <img class="img-hueso4" src="./assets//hueso.png">
         </div>
+
+        <a target="_blank" class="bx icon-rrss bxl-whatsapp wsp-icon" href="https://api.whatsapp.com/send?phone=51940158503&amp;text=Buenos%20d%C3%ADas,%20deseo%20sacar%20una%20cita">
+		</a>
       </section>
 
     </section>`;

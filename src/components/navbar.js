@@ -31,7 +31,7 @@ const seccNavbar = () => {
               <i class="fa-solid fa-bars"></i>
           </div>
           <ul>
-            <h1>Monito</h1>
+            <h1><i class="fa-solid fa-paw fa-xs"></i> Monito</h1>
           </ul>
           <ul class="navbar-options">
             <li>Inicio</li>

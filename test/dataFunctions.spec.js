@@ -1,5 +1,5 @@
-import dataFunctions from './src/lib/dataFunctions.js';
-import { data } from './test/data.js';
+import dataFunctions from '../src/lib/dataFunctions.js';
+import { data } from '../test/data.js';
 
 const { showPets, filterDataByType, filterDataByAge, filterDataByValue, orderPetsBy, countAdoptedPets } = dataFunctions;
 
