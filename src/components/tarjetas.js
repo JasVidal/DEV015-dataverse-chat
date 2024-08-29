@@ -1,3 +1,6 @@
+import petsData from "../data/dataset.js";
+import { renderItems } from "./tarjetaContenido.js";
+
 const seccTarjetas = () => {
   const tarjetas = document.createElement('section');
   tarjetas.className = "mascotas-container";
@@ -5,9 +8,6 @@ const seccTarjetas = () => {
   tarjetas.innerHTML = `
 
 <!-- Desktop Tarjetas -->
-
-    <section class="mascotas-container" id="tarjetas-section">
-
       <div class="mascotas-barra">
         <ul class="opciones-mascota">
           <li class="boton-filtros"><i class="fa-solid fa-bars" id="bars-2"></i>Filtros</li>
@@ -70,8 +70,7 @@ const seccTarjetas = () => {
           <img class="img-hueso1" src="./assets//hueso.png">
           <img class="img-hueso2" src="./assets//hueso.png">
         </div>
-        <div id="root">
-
+        <div id="root-2">
         </div>
         <div class="huesos2">
         <img class="img-hueso3" src="./assets//hueso.png">
@@ -81,8 +80,14 @@ const seccTarjetas = () => {
         <a target="_blank" class="bx icon-rrss bxl-whatsapp wsp-icon" href="https://api.whatsapp.com/send?phone=51940158503&amp;text=Buenos%20d%C3%ADas,%20deseo%20sacar%20una%20cita">
 		</a>
       </section>
+`;
 
-    </section>`;
+
+const root2 = tarjetas.children[2].children[3]
+root2.appendChild(document.createElement('div'))
+
+const data = renderItems(petsData);
+root2.appendChild(renderItems(petsData))
   return tarjetas;
 }
 
