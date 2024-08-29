@@ -44,9 +44,7 @@ export const onURLChange = (location) => {
   // renderiza la vista con la ruta y el objeto
 
   const { pathname, search } = location;
-  console.log("🚀 ~ onURLChange ~ pathname:", pathname)
   const props = queryStringToObject(search);
-  console.log("🚀 ~ onURLChange ~ props:", props)
   renderView(pathname, props);
 
   console.log(document.getElementById('root-2'));
