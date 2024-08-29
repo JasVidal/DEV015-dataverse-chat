@@ -33,7 +33,7 @@ export const renderItems = (pets) => {
                             <div itemprop="size">Tamaño: ${pet.facts.size}</div>
                             <div itemprop="temperament">Comportamiento: ${pet.facts.temperament}</div>
                             <div class="botones">
-                              <button id="ver-mas">Ver <i class="fa-solid fa-circle-plus"></i></button>
+                              <a href="/vermas?nombre=${pet.name}" id="ver-mas">Ver <i class="fa-solid fa-circle-plus"></i></a>
                               <button id="chat">Chat <i class="fa-sharp fa-regular fa-comment"></i></button>
                             </div>
                           </ul>
