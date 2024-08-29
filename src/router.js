@@ -31,7 +31,7 @@ const renderView = (pathname, props = {}) => {
   root.innerHTML = '';
 
   if (ROUTES[pathname]) {
-    root.replaceChildren(ROUTES[pathname]());
+    root.replaceChildren(ROUTES[pathname](props));
   }
     else {
       root.replaceChildren(ROUTES["/Error"]());
@@ -44,12 +44,25 @@ export const onURLChange = (location) => {
   // renderiza la vista con la ruta y el objeto
 
   const { pathname, search } = location;
+  console.log("🚀 ~ onURLChange ~ pathname:", pathname)
   const props = queryStringToObject(search);
+  console.log("🚀 ~ onURLChange ~ props:", props)
   renderView(pathname, props);
+
+  console.log(document.getElementById('root-2'));
+
 }
 
 
   const queryStringToObject = (queryString) => {
+    const url =new URLSearchParams(queryString)
+
+    // url.has('nombre')
+    //url.get('nombre')
+
+    return {nombre: url.get('nombre')}
+
+
   // convert query string to URLSearchParams
   // convert URLSearchParams to an object
   // return the object
