@@ -10,7 +10,7 @@ import { setRootEl, setRoutes, onURLChange } from './router.js';
 const routes = {
   '/': Home,
   '/error': Error,
-  '/vermas': verMas,
+  '/vermas': (props) => verMas(props),
 };
 
 // Assign the routes
@@ -24,6 +24,8 @@ window.addEventListener("DOMContentLoaded", () => {
   setRootEl(rootEl);
   onURLChange(window.location)
 });
+
+
 
 /*
 TODO:
