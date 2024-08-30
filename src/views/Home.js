@@ -21,12 +21,10 @@ const Home = () => {
   homeContainer.className = "home";
   homeContainer.id = "home-container";
   
-  const bannerSection = seccBanner();
-  const tarjetasSection = seccTarjetas();
 
   homeContainer.appendChild(seccNavbar());
   homeContainer.appendChild(seccBanner());
-  homeContainer.appendChild(tarjetasSection);
+  homeContainer.appendChild(seccTarjetas());
   homeContainer.appendChild(seccNosotros());  
   homeContainer.appendChild(seccRegistrate());
   homeContainer.appendChild(seccVisitanos());
@@ -41,12 +39,10 @@ const Home = () => {
 
 /*Botón para abrir y cerrar Sidebar */
 
-const root = document.getElementById('root')
-
- window.onload=function(){
-  const menuBtn = seccNavbar.querySelector('.menu-btn')
-  const btnCloseIcon = seccNavbar.querySelector('.btn-close i')
-  const dropDownMenu = seccNavbar.querySelector('.sidebar')
+  window.onload=function(){
+  const menuBtn = homeContainer.querySelector('.menu-btn')
+  const btnCloseIcon = homeContainer.querySelector('.btn-close i')
+  const dropDownMenu = homeContainer.querySelector('.sidebar')
 
   menuBtn.onclick = function(){
     dropDownMenu.classList.toggle('active')
@@ -61,19 +57,22 @@ const root = document.getElementById('root')
 
 // Botón Conócelos //
 
-const btnConocelos = bannerSection.querySelector('#conocelos-btn')
+const btnConocelos = homeContainer.querySelector('#conocelos-btn');
+const sectionTarjetas = homeContainer.querySelector('#tarjetas-section')
 
 btnConocelos.addEventListener('click', () => {
-  tarjetasSection.scrollIntoView({
+  sectionTarjetas.scrollIntoView({
+  
     behavior: 'smooth'
   });
 });
 
+  console.log(seccTarjetas)
 
 // Botón aparecer Filtros //
 
-tarjetasSection.querySelector('.boton-filtros').addEventListener('click', function () {
-  const botones = tarjetasSection.querySelector('.mascotas-filtros');
+homeContainer.querySelector('.boton-filtros').addEventListener('click', function () {
+  const botones = homeContainer.querySelector('.mascotas-filtros');
   if (botones.style.display === 'none') {
     botones.style.display = 'block';
   }
@@ -82,10 +81,12 @@ tarjetasSection.querySelector('.boton-filtros').addEventListener('click', functi
   }
 });
 
-tarjetasSection.addEventListener('load', () => {
+//const root2 = document.getElementById('contenido-tarjetas')
+
+homeContainer.addEventListener('load', () => {
   const pets = showPets();
   root.appendChild( renderItems(pets));
-  console.log(document.getElementById('root-2'));
+  console.log(document.getElementById('contenido-tarjetas'));
 
 })
 
@@ -135,9 +136,9 @@ function aplicarFiltros(datos) {
 
 // Aplicar filtros y actualizar la vista
 function actualizarVista() {
-  root.innerHTML = '';
+  document.getElementById('contenido-tarjetas').innerHTML = '';
   const resultadosFiltrados = aplicarFiltros(petsData);
-  root.appendChild(renderItems(resultadosFiltrados));
+  document.getElementById('contenido-tarjetas').appendChild(renderItems(resultadosFiltrados));
 }
 
 // Filtro Tipo //
@@ -152,7 +153,7 @@ selectTipo.addEventListener('change', (event) => {
 
 // Filtro Edad //
 
-const selectAge = tarjetasSection.querySelector('#edad');
+const selectAge = homeContainer.querySelector('#edad');
 selectAge.addEventListener("change", () => {
   filtros.edad = selectAge.value;
   actualizarVista();
@@ -160,7 +161,7 @@ selectAge.addEventListener("change", () => {
 
 // Filtro Género //
 
-const selectGenero = tarjetasSection.querySelector('#genero');
+const selectGenero = homeContainer.querySelector('#genero');
 
 selectGenero.addEventListener('change', (event) => {
   filtros.genero = event.target.value;
@@ -170,7 +171,7 @@ selectGenero.addEventListener('change', (event) => {
 
 //Filtro Tamaño //
 
-const selectTamaño = tarjetasSection.querySelector('#tamaño');
+const selectTamaño = homeContainer.querySelector('#tamaño');
 selectTamaño.addEventListener('change', (event) => {
   filtros.tamaño = event.target.value;
   actualizarVista();
@@ -179,10 +180,10 @@ selectTamaño.addEventListener('change', (event) => {
 
 // Botón Limpiar //
 
-const botonLimpiar = tarjetasSection.querySelector('#btn-limpiar');
+const botonLimpiar = homeContainer.querySelector('#btn-limpiar');
 botonLimpiar.addEventListener('click', () => {
   const pets = showPets();
-  root.innerHTML = "";
+  document.getElementById('contenido-tarjetas').innerHTML = "";
 
   // Restablecer el estado de los filtros
   filtros.tipo = null;
@@ -200,36 +201,36 @@ botonLimpiar.addEventListener('click', () => {
   botonOrdenarAsc.checked = false;
   botonOrdenarDesc.checked = false;
 
-  root.appendChild(renderItems(pets));
+  document.getElementById('contenido-tarjetas').appendChild(renderItems(pets));
 });
 
 
 // Filtro Ordenar Alfabéticamente //
 
-const botonOrdenarAsc = tarjetasSection.querySelector('#asc');
+const botonOrdenarAsc = homeContainer.querySelector('#asc');
 botonOrdenarAsc.addEventListener("click", function(){
-  document.getElementById('root-2').innerHTML = "";
+  document.getElementById('contenido-tarjetas').innerHTML = "";
   const resultadosFiltrados = aplicarFiltros(petsData);
   const valorElegido = botonOrdenarAsc.value;
   const ordenarPetsData = orderPetsBy(resultadosFiltrados,'name',valorElegido);
-  document.getElementById('root-2').appendChild(renderItems(ordenarPetsData))
+  document.getElementById('contenido-tarjetas').appendChild(renderItems(ordenarPetsData))
 })
 
-const botonOrdenarDesc= tarjetasSection.querySelector('#desc');
+const botonOrdenarDesc= homeContainer.querySelector('#desc');
 botonOrdenarDesc.addEventListener("click", function(){
-  document.getElementById('root-2').innerHTML = "";
+  document.getElementById('contenido-tarjetas').innerHTML = "";
   const resultadosFiltrados = aplicarFiltros(petsData);
   const valorElegido = botonOrdenarDesc.value;
   const ordenarPetsData = orderPetsBy(resultadosFiltrados, 'name', valorElegido);
-  document.getElementById('root-2').appendChild(renderItems(ordenarPetsData))
+  document.getElementById('contenido-tarjetas').appendChild(renderItems(ordenarPetsData))
 })
 
 // Botón Estadísticas //
 
-const btnStats = tarjetasSection.querySelector('#btn-estadísticas');
-const sectionStats = tarjetasSection.querySelector('.estadisticas-section');
-const btncloseStats = tarjetasSection.querySelector('.btn-close2 li i');
-const adoptedPets = tarjetasSection.querySelector('.adoptados');
+const btnStats = homeContainer.querySelector('#btn-estadísticas');
+const sectionStats = homeContainer.querySelector('.estadisticas-section');
+const btncloseStats = homeContainer.querySelector('.btn-close2 li i');
+const adoptedPets = homeContainer.querySelector('.adoptados');
 
 btnStats.addEventListener('click', () => {
   sectionStats.style.display = 'block';

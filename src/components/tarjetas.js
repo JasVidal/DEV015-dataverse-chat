@@ -70,24 +70,22 @@ const seccTarjetas = () => {
           <img class="img-hueso1" src="./assets//hueso.png">
           <img class="img-hueso2" src="./assets//hueso.png">
         </div>
-        <div id="root-2">
+        <div id="contenido-tarjetas">
         </div>
         <div class="huesos2">
         <img class="img-hueso3" src="./assets//hueso.png">
         <img class="img-hueso4" src="./assets//hueso.png">
         </div>
 
-        <a target="_blank" class="bx icon-rrss bxl-whatsapp wsp-icon" href="https://api.whatsapp.com/send?phone=51940158503&amp;text=Buenos%20d%C3%ADas,%20deseo%20sacar%20una%20cita">
+        <a id="chat-grupal" class="fa-sharp fa-regular fa-comment xl" href="/chatgrupal">
 		</a>
       </section>
 `;
 
 
-const root2 = tarjetas.children[2].children[3]
-root2.appendChild(document.createElement('div'))
+const contenidoTarjetas = tarjetas.children[2].children[3]
 
-const data = renderItems(petsData);
-root2.appendChild(renderItems(petsData))
+contenidoTarjetas.appendChild(renderItems(petsData))
   return tarjetas;
 }
 

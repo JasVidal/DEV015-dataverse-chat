@@ -33,15 +33,14 @@ export const renderItems = (pets) => {
                             <div itemprop="size">Tamaño: ${pet.facts.size}</div>
                             <div itemprop="temperament">Comportamiento: ${pet.facts.temperament}</div>
                             <div class="botones">
-                              <a href="/vermas?nombre=${pet.name}" id="ver-mas">Ver <i class="fa-solid fa-circle-plus"></i></a>
-                              <button id="chat">Chat <i class="fa-sharp fa-regular fa-comment"></i></button>
+                              <a id="ver-mas" href="/vermas?nombre=${pet.name}">Ver <i class="fa-solid fa-circle-plus"></i></a>
+                              <a id="chat" href="/chatindividual">Chat <i class="fa-sharp fa-regular fa-comment"></i></a>
                             </div>
                           </ul>
                         `;
       ul.appendChild(petItem);
     });
   
-    // return list.innerHTML;
     return ul;
   };
   
