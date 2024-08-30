@@ -27,7 +27,8 @@ const seccVerMas = (props) => {
                     <div itemprop="verMas-img">
                         <img class="verMas-img" src="${pet.imageUrl}" alt="${pet.name}">
                     <div itemprop="name">${pet.name}</div>
-                    <a id="btn-chat" href="">Chat<i class="fa-regular fa-comment fa-2xs"></i></button>
+                    <a id="btn-chat" href="">Chat<i class="fa-regular fa-comment fa-2xs"></i></a>
+                    </div>
                 </div>
                 <div class="verMas-derecha">
                     <div itemprop="description">${pet.description}</div>

@@ -2,54 +2,58 @@
   width: auto;
   height: auto;
   background-color: #FFBE1B;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .fa-circle-xmark {
-  position: relative;
   color: #ffffff;
   display: flex;
+  font-size: 40px;
   justify-content: right;
   vertical-align: top;
   text-align: right;
+  margin: 1em 0 1em 1em;
 }
 
 .verMas-container {
-  width: 90%;
+  width: 80%;
   height: auto;
-  color: #ffffff;
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 4em 0;
 }
 
 .verMas-izquierda {
-  width: 70%;
-  height: 500px;
+  width: 80%;
+  height: 350px;
   display: flex;
   justify-content: center;
-  margin-top: 12rem;
-  margin-left: 6.5em;
+  margin-top: 4em;
   text-align: center;
   z-index: 19;
 }
 
 .verMas-derecha {
-  width: 30%;
-  height: 470px;
+  width: 80%;
+  height: 450px;
   text-align: center;
   z-index: 19;
-  margin-top: -130px;
+  margin-bottom: 4em;
 }
 
 .verMas-img {
-  z-index: 19;
   width: auto;
-  height: 220px;
-  margin-right: 110px;
-  margin-top: -5px;
+  height: 200px;
+  border-radius: 100%;
+  z-index: 19;
 }
 
 #btn-chat {
