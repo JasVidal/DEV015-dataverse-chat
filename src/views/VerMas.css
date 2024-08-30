@@ -1,41 +1,59 @@
-.individual.container{
-    width: auto;
-    height: auto;
-    color: #FFBE1B,
+.verMas {
+  width: auto;
+  height: auto;
+  background-color: #FFBE1B;
+  align-items: center;
+  text-align: center;
 }
 
-i .circle-xmark {
-    color: #ffffff;
-    display: flex;
-    justify-content: right;
-    vertical-align: top;
+.fa-circle-xmark {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: right;
+  vertical-align: top;
+  text-align: right;
 }
 
-.individual-izquierda {
-    width: 70%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    margin-top: 12rem;
-    margin-left: 6.5em;
-    text-align: center;
-    z-index: 19;
-  }
+.verMas-container {
+  width: 90%;
+  height: auto;
+  color: #ffffff;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .individual-derecha {
-    width: 30%;
-    height: 470px;
-    text-align: center;
-    z-index: 19;
-    margin-top: -130px;
-  }
+.verMas-izquierda {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+  margin-left: 6.5em;
+  text-align: center;
+  z-index: 19;
+}
 
-  .individual-img {
-    z-index: 19;
-    width: auto;
-    height: 220px;
-    margin-right: 110px;
-    margin-top: -5px;
-  }
+.verMas-derecha {
+  width: 30%;
+  height: 470px;
+  text-align: center;
+  z-index: 19;
+  margin-top: -130px;
+}
+
+.verMas-img {
+  z-index: 19;
+  width: auto;
+  height: 220px;
+  margin-right: 110px;
+  margin-top: -5px;
+}
+
+#btn-chat {
+  border: none;
+}
 
 
