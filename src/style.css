@@ -78,7 +78,7 @@
     background: #ffffff;
     left: -300px;
     transition: left 0.4s ease;
-    z-index: 1600;
+    z-index: 70;
   }
   
   /* Activar Sidebar */
@@ -392,9 +392,9 @@
     flex-wrap: wrap;
     }
   
-  #root li{
-    margin-top: 0.5em;
-    z-index: 1500;
+  #contenido-tarjetas li{
+    margin-top: 1.8em;
+    z-index: 60;
   }
   
   .tarjeta {
@@ -446,28 +446,27 @@
     margin: 1.5em 0em 1.5em 0em;
   }
 
-  #ver-mas{
-    display: flex;
-    flex-direction: row;
+  #ver-mas {
+    text-decoration: none;
+    justify-content: space-around;
     color: white;
-    padding-top: 0.8em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 0.8em;
+    padding-top: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
     text-align: center;
     border: none;
     border-radius: 2em;
     background-color: #ED8A0A;
   }
 
-  #chat{
-    display: flex;
-    flex-direction: row;
+  #chat {
+    text-decoration: none;
     color: white;
-    padding-top: 0.8em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 0.8em;
+    padding-top: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
     text-align: center;
     border: none;
     border-radius: 2em;
@@ -480,6 +479,22 @@
 
   .tarjeta .fa-comment {
     color: #ffffff;
+  }
+
+  #chat-grupal {
+    text-decoration: none;
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: #58C22F;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 200;
   }
   
   /* Nosotros */
@@ -899,7 +914,7 @@
     justify-content: center;
     font-family: 'Josefin Sans';
     line-height: 2em;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     z-index: 900;
     font-size: 1.1em;
   }
@@ -1334,8 +1349,8 @@
   
   /* Tarjetas */
   
-  #root{
-    margin-top: 0px;
+  #contenido-tarjetas{
+    margin-top: 15em;
   }
   
   .mascotas-container {
@@ -1395,16 +1410,15 @@
     position: absolute;
   }
 
-  #root .ul-tarjeta{
+  #contenido-tarjetas .ul-tarjeta{
     display: flex;
     justify-content: space-evenly;
     padding-inline-start: 0;
     flex-wrap: wrap;
     }
   
-  #root li{
-    margin-top: 0.5em;
-    z-index: 1500;
+  #contenido-tarjetas li{
+    z-index: 60;
   }
   
   .tarjeta {
