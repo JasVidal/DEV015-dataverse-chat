@@ -46,24 +46,20 @@ export const onURLChange = (location) => {
   const { pathname, search } = location;
   const props = queryStringToObject(search);
   renderView(pathname, props);
-
-  console.log(document.getElementById('root-2'));
-
 }
 
 
   const queryStringToObject = (queryString) => {
-    const url =new URLSearchParams(queryString)
-
-    // url.has('nombre')
-    //url.get('nombre')
-
-    return {nombre: url.get('nombre')}
-
-
   // convert query string to URLSearchParams
   // convert URLSearchParams to an object
   // return the object
+  // url.has('nombre')
+  //url.get('nombre')
+    const url =new URLSearchParams(queryString)
+    return {nombre: url.get('nombre')}
+
+
+ 
 }
 
 export const navigateTo = (pathname, props={}) => {
