@@ -424,6 +424,10 @@
     margin: 10px 40px 0 40px;
   }
   
+  div[itemprop="short-description"] {
+    margin: 1.2em 0 1.2em 0;
+  }
+
   div[itemprop="name"] {
     margin: 1em 4em 1em 4em;
     color: white;

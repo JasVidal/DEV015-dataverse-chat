@@ -26,7 +26,7 @@ export const renderItems = (pets) => {
                               <img class="tarjeta-img" src="${pet.imageUrl}" alt="${pet.name}">
                             </div>
                             <div itemprop="name">${pet.name}</div>
-                            <div itemprop="description">${pet.shortDescription}</div>
+                            <div itemprop="short-description">${pet.shortDescription}</div>
                             <div itemprop="age">Edad: ${ageDisplay}</div>
                             <div itemprop="gender">Género: ${pet.facts.gender}</div>
                             <div itemprop="breed">Raza: ${pet.facts.breed}</div>
