@@ -1,8 +1,10 @@
 import petsData from '../data/dataset.js';
 
 const seccVerMas = (props) => {
-    // pets.forEach((pet) => {
-    
+
+  const body = document.createElement('body');
+     body.className = "body";
+
   const petName = props.nombre // Mittens
 
   const [pet]= petsData.filter(e=> e.name.toLowerCase()===petName.toLowerCase())
@@ -17,17 +19,18 @@ const seccVerMas = (props) => {
   } else {
     ageDisplay = `${years} año(s)`;
   }
-          
-   const verMas = document.createElement('section');
+  
+  const verMas = document.createElement('section');
      verMas.className = "verMas";
-    verMas.innerHTML = `
+
+  verMas.innerHTML = `
           <i class="fa-solid fa-circle-xmark"></i>
             <div class="verMas-container">
                 <div class="verMas-izquierda">
                     <div itemprop="verMas-img">
                         <img class="verMas-img" src="${pet.imageUrl}" alt="${pet.name}">
                     <div itemprop="name">${pet.name}</div>
-                    <a id="btn-chat" href="">Chat<i class="fa-regular fa-comment fa-2xs"></i></a>
+                    <button id="btn-chat" href="">Chat <i class="fa-regular fa-comment fa-2xs"></i></button>
                     </div>
                 </div>
                 <div class="verMas-derecha">
@@ -42,11 +45,7 @@ const seccVerMas = (props) => {
             </div>
         </section>
     `;
-        // verMas.innerHTML='hola';
-        console.log(verMas);
-   // section.appendChild(petItem);
-
-        return verMas;
+    return verMas;
 }
 
 export default seccVerMas;
