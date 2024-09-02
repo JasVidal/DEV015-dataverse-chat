@@ -77,8 +77,8 @@ const seccTarjetas = () => {
         <img class="img-hueso4" src="./assets//hueso.png">
         </div>
 
-        <a id="chat-grupal" class="fa-sharp fa-regular fa-comment xl" href="/chatgrupal">
-		</a>
+        <button id="chat-grupal" class="fa-sharp fa-regular fa-comment xl" href="/chatgrupal">
+		</button>
       </section>
 `;
 
