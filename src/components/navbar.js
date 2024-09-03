@@ -34,10 +34,10 @@ const seccNavbar = () => {
             <h1><i class="fa-solid fa-paw fa-xs"></i> Monito</h1>
           </ul>
           <ul class="navbar-options">
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li>Regístrate</li>
-            <li>Ubícanos</li>
+            <li class="btn-inicio">Inicio</li>
+            <li class="btn-nosotros">Nosotros</li>
+            <li class="btn-registrate">Regístrate</li>
+            <li class="btn-ubicanos">Ubícanos</li>
             <li class="li-donations">Dona aquí <i class="fa-solid fa-heart"></i></li>
             <i class="fa-solid fa-user"></i>
           </ul>
