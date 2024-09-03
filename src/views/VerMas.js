@@ -2,12 +2,7 @@ import petsData from '../data/dataset.js';
 
 const seccVerMas = (props) => {
 
-  const body = document.createElement('body');
-     body.className = "body";
-
-  const petName = props.nombre // Mittens
-
-  const [pet]= petsData.filter(e=> e.name.toLowerCase()===petName.toLowerCase())
+  const pet = petsData.find(item => item.id === props.id);
 
   // Convertir la edad a meses
   const { years, months } = pet.facts.age;

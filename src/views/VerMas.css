@@ -2,13 +2,8 @@
   margin: 0px;
 }
 
-body {
-  font-family: 'Josefin Sans';
-  margin: 0;
-  background-color: #FFBE1B;
-}
-
 .verMas {
+  background-color: #FFBE1B;
   width: auto;
   height: auto;
   display: flex;

@@ -16,7 +16,7 @@ const routes = {
   '/': Home,
   '/error': Error,
   '/apikey': ApiKeypage,
-  '/vermas': (props) => verMas(props),
+  '/vermas':verMas,
   '/chatindividual': chatIndividual,
   /*'/chatgrupal': ChatGrupal, */
 };

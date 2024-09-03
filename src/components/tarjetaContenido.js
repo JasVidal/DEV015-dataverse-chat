@@ -41,6 +41,11 @@ export const renderItems = (pets) => {
                           </ul>
                         `;
 
+        const btnVerMas = petItem.querySelector("#ver-mas");
+        btnVerMas.addEventListener('click', () => {
+          navigateTo ("/vermas", {id:pet.id})
+        } )                
+
         const btnElement = petItem.querySelector(".btn-chat");
         btnElement.addEventListener('click', () => {
           navigateTo ("/chatindividual", {id:pet.id})
