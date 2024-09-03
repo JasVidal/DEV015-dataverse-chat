@@ -5,7 +5,6 @@ const seccDonaciones = () => {
   
 <!-- Desktop Dona Aquí -->
 
-    <section class="donaciones">
       <div class="donaciones-izquierda">
         <div class="texto-donaciones">
           <h1>Dona Aquí</h1>
