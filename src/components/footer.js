@@ -4,10 +4,10 @@ const seccFooter = () => {
     footer.innerHTML = `
   
         <div class="column">
-      <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">SIGN UP</a>
-      <a href="#">CONTACT US</a>
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Regístrate</a>
+      <a href="#">Visítanos</a>
     </div>
     <div class="center-column">
       <h3>Salva una vida</h3>
