@@ -15,7 +15,7 @@ const seccNavbar = () => {
               <li>Inicio</li>
               <li>Nosotros</li>
               <li>Regístrate</li>
-              <li>Ubícanos</li>
+              <li>Visítanos</li>
               <li class="li-sidebar-donations">Dona aquí</li>
           </ul>
 
@@ -37,7 +37,7 @@ const seccNavbar = () => {
             <li class="btn-inicio">Inicio</li>
             <li class="btn-nosotros">Nosotros</li>
             <li class="btn-registrate">Regístrate</li>
-            <li class="btn-ubicanos">Ubícanos</li>
+            <li class="btn-visitanos">Visítanos</li>
             <li class="li-donations">Dona aquí <i class="fa-solid fa-heart"></i></li>
             <i class="fa-solid fa-user"></i>
           </ul>
