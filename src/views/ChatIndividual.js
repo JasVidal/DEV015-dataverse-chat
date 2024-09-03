@@ -16,7 +16,7 @@ console.log(pet)
             <header class="headerchat-arriba">
                     <div itemprop="chatIndividual-img">
                      <img class="chatIndividual-img" src="${pet.imageUrl}"></div>
-                    <div itemprop="name">${pet.name}</div>
+                    <div id="div-name" itemprop="name">${pet.name}</div>
                     <i class="fa-solid fa-ellipsis-vertical fa-comment fa-md"></i>
             </header>
 
