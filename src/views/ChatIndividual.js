@@ -3,10 +3,10 @@ import petsData from '../data/dataset.js';
 const pageChatIndividual = (props) => {
   
 const pet = petsData.find(item => item.id === props.id);
-console.log(pet)
     
   const chatIndividual = document.createElement('section');
   chatIndividual.className = "chat-individual";
+
   chatIndividual.innerHTML = 
 
   
