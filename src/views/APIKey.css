@@ -1,16 +1,104 @@
 * {
     margin: 0px;
   }
+
+.apikey {
+    width: auto;
+    height: 551px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6eed3c;
+    margin: 0;
+    font-family: 'Josefin Sans';
+  }
   
-.pageApi {
+.api-container {
+    background: #00a698;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 400px;
     width: auto;
     height: auto;
-    background-color: #A382C2;
     display: flex;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    
     justify-content: center;
     align-content: center;
+}
+
+/* .api-container > img {
+  padding: 20px;
+} */
+
+h1 {
+  color: #ffffff;
+  padding: 10px;
+  margin: 1em 0 1em 0;
+  font-weight: 500;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1.5em;
+}
+
+input::placeholder {
+  font-family: 'Josefin Sans';
+}
+
+
+.btn-limpiar {
+  cursor: pointer;
+  background-color: #71538e;
+  cursor: pointer;
+  border-radius: 2em;
+  border: none;
+  padding-top: 0.6em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  padding-bottom: 0.6em;
+  color:#ffffff;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 1em;
+}
+
+.btn-guardar {
+  cursor: pointer;
+  background-color: #cd305f;
+  cursor: pointer;
+  border-radius: 2em;
+  border: none;
+  padding-top: 0.6em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  padding-bottom: 0.64em;
+  color:#ffffff;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 1em;
+}
+
+.btn-regresar {
+  cursor: pointer;
+  background-color: #ddc913;
+  cursor: pointer;
+  border-radius: 2em;
+  border: none;
+  padding-top: 0.6em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  padding-bottom: 0.64em;
+  color:#ffffff;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 1em;
 }
