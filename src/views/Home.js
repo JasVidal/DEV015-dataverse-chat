@@ -54,20 +54,53 @@ const Home = () => {
   
 }
 
+// Botón Navbar Nosotros //
 
-// Botón Conócelos //
-
-const btnConocelos = homeContainer.querySelector('#conocelos-btn');
-const sectionTarjetas = homeContainer.querySelector('#tarjetas-section')
+const btnConocelos = homeContainer.querySelector('.btn-nosotros');
+const sectionNosotros = homeContainer.querySelector('.nosotros')
 
 btnConocelos.addEventListener('click', () => {
-  sectionTarjetas.scrollIntoView({
+  sectionNosotros.scrollIntoView({
   
     behavior: 'smooth'
   });
 });
 
-  console.log(seccTarjetas)
+// Botón Navbar Regístrate //
+
+const btnRegistrate = homeContainer.querySelector('.btn-registrate');
+const sectionRegistrate = homeContainer.querySelector('.registrate')
+
+btnRegistrate.addEventListener('click', () => {
+  sectionRegistrate.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
+
+// Botón Navbar Visítanos //
+
+const btnVisitanos = homeContainer.querySelector('.btn-visitanos');
+const sectionVisitanos = homeContainer.querySelector('.visitanos')
+
+btnVisitanos.addEventListener('click', () => {
+  sectionVisitanos.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
+
+// Botón Banner Conócelos //
+
+const btnNosotros = homeContainer.querySelector('#conocelos-btn');
+const sectionTarjetas = homeContainer.querySelector('#tarjetas-section')
+
+btnNosotros.addEventListener('click', () => {
+  sectionTarjetas.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
 
 // Botón aparecer Filtros //
 
