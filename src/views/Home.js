@@ -90,6 +90,18 @@ btnVisitanos.addEventListener('click', () => {
   });
 });
 
+// Botón Navbar Dona Aquí //
+
+const btnDonaciones = homeContainer.querySelector('.li-donations');
+const sectionDonaciones = homeContainer.querySelector('.donaciones')
+
+btnDonaciones.addEventListener('click', () => {
+  sectionDonaciones.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
+
 // Botón Banner Conócelos //
 
 const btnNosotros = homeContainer.querySelector('#conocelos-btn');
