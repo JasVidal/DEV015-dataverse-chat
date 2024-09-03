@@ -961,7 +961,7 @@
   footer{
     z-index: 550;
     background: #e7a900;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1247,7 +1247,7 @@
     background-color: #58C22F;
     border: none;
     box-shadow: 3px 4px #68686824;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Josefin Sans";
   }
   
   /* Desktop Filtros y Tarjetas */
