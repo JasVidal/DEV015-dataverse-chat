@@ -53,18 +53,21 @@ export const onURLChange = (location) => {
   // convert query string to URLSearchParams
   // convert URLSearchParams to an object
   // return the object
-  // url.has('nombre')
-  //url.get('nombre')
-    const url =new URLSearchParams(queryString)
-    return {nombre: url.get('nombre')}
-
-
- 
+  const params = new URLSearchParams(queryString);
+  const paramsObject = Object.fromEntries(params);
+  return paramsObject;
 }
 
 export const navigateTo = (pathname, props={}) => {
+  
+  const queryString = Object.keys(props).length
+    ? `?${new URLSearchParams(props)}`
+    : "";
+  // creando la URL
+  const url = `${window.location.origin}${pathname}${queryString}`;
+  // Add a new state to the browser history
   // update window history with pushState
+  window.history.pushState(props, "", url);
   // render the view with the pathname and props
-  window.history.pushState({}, ''. pathname);
   renderView(pathname, props);
 }
