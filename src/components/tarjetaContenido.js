@@ -1,3 +1,5 @@
+import { navigateTo } from "../router.js";
+
 export const renderItems = (pets) => {
     const ul = document.createElement("ul");
     ul.className = "ul-tarjeta";
@@ -34,10 +36,15 @@ export const renderItems = (pets) => {
                             <div itemprop="temperament">Comportamiento: ${pet.facts.temperament}</div>
                             <div class="botones">
                               <button id="ver-mas" href="/vermas?nombre=${pet.name}">Ver <i class="fa-solid fa-circle-plus"></i></button>
-                              <button id="chat" href="/chatindividual">Chat <i class="fa-sharp fa-regular fa-comment"></i></button>
+                              <button class="btn-chat">Chat <i class="fa-sharp fa-regular fa-comment"></i></button>
                             </div>
                           </ul>
                         `;
+
+        const btnElement = petItem.querySelector(".btn-chat");
+        btnElement.addEventListener('click', () => {
+          navigateTo ("/chatindividual", {id:pet.id})
+        } )
       ul.appendChild(petItem);
     });
   
