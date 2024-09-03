@@ -5,7 +5,6 @@ const seccVisitanos = () => {
   
 <!-- Desktop Visítanos -->
 
-     <section class="visitanos">
       <div class="visitanos-izquierda">
           <img class="rect-visitanos" src="./assets/Rectangle visitanos.svg">
           <p>Av. Monito Place<br> 578, Lima Perú</p>
