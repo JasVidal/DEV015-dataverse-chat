@@ -4,7 +4,7 @@
 
 .apikey {
     width: auto;
-    height: 551px;
+    height: 552px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,12 @@
   }
   
 .api-container {
+    margin: 60px;
     background: #00a698;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    max-width: 400px;
+    padding: 30px;
+    max-width: 300px;
     width: auto;
     height: auto;
     display: flex;
@@ -29,15 +30,11 @@
     align-content: center;
 }
 
-/* .api-container > img {
-  padding: 20px;
-} */
-
 h1 {
   color: #ffffff;
-  padding: 10px;
-  margin: 1em 0 1em 0;
+  padding: 21px;
   font-weight: 500;
+  font-size: 1em;
 }
 
 input {
@@ -47,7 +44,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 1.5em;
+  margin: 1em 1.5em 0 1.5em;
 }
 
 input::placeholder {
@@ -94,8 +91,8 @@ input::placeholder {
   border-radius: 2em;
   border: none;
   padding-top: 0.6em;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 0.64em;
   color:#ffffff;
   text-align: center;
