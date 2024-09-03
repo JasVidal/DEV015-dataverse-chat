@@ -1,157 +1,272 @@
 * {
-    margin: 0px;
-  }
+  margin: 0px;
+}
+
+.chat-individual {
+  width: auto;
+  height: auto;
+  background-color: #A382C2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: nowrap;   
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1em;
+  margin: 0 1em 3em 1em;
+}
+
+.fa-circle-xmark {
+  color: #ffffff;
+  font-size: 40px;
+  vertical-align: top;
+  text-align: right;
+  cursor: pointer;
+  margin: 1em 0 1em 11em;
+}
+
+.chatin-container {
+  width: 80%;
+  border-radius: 2em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4em 0;
+}
+
+.headerchat-arriba {
+  width: 100%;
+  height: auto;
+  padding: 6px 0 6px 0;
+  background-color: #5ad910;
+  border-radius: 0.5em 0.5em 0 0;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+.chatIndividual-img {
+  width: auto;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div[itemprop="name"] {
+  margin: 0;
+  color: white;
+  background-color: transparent;
+}
+
+.fa-ellipsis-vertical {
+  color: #ffffff;
+}
+
+.conversacion-abajo {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 19;
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.message-receptor {
+  width: 100%;
+  height: auto;
+  padding: 0.2em;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 1.8em;
+  gap: 0.2em;
+}
+
+.message_text_rec {
+  width: 100%;
+  height: auto;
+  padding-top: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.4em;
+  background-color: #BBFFA0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  font-size: 0.3em;
+}
+
+.message-emisor {
+  width: 100%;
+  height: auto;
+  padding: 0.2em;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 1.8em;
+  gap: 0.2em;
+}
+
+.message-emisor > .fa-user {
+  color: #ffffff;   
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 100%;
+  border: none;
+  background-color: #8556B3;
+
+}
+
+.message_text_em {
+  width: 100%;
+  height: auto;
+  padding-top: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.4em;
+  background-color: #F0E0FF;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  font-size: 0.3em;
+}
+
+#texto {
+  width: 90%;
+  height: auto;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Josefin Sans';
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #c2c2c2;
+  text-align: center;
+  border-radius: 2em;
+  background-color: #e2e2e2;
+  cursor: pointer;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[name='user-msg'] {
+  width: 70%;
+  height: auto;
+  border: none;
+  border-radius: 20px;
+  margin: 0.5em;
+}
+
+#texto::placeholder {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans';
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #c2c2c2;
+  padding-top: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  text-align: center;
+  border-radius: 2em;
+  background-color: #c5c5c5;
+  cursor: pointer;
+}
+
+.fa-paper-plane {
+  color:#6f6f6f;
+}
+
+
+
+/* --------------------- Desktop Design ------------------------- */
   
-  .chat-individual {
-    width: auto;
-    height: auto;
-    background-color: #A382C2;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    align-content: center;
+@media (min-width: 992px) {
+
+  *{
+    margin: 0;
   }
-  
+
+  body{
+  font-family: 'Josefin Sans';
+  margin: 0;
+  }
+
   .fa-circle-xmark {
     color: #ffffff;
     font-size: 40px;
     vertical-align: top;
     text-align: right;
-    margin: 1em 0 1em 3em;
     cursor: pointer;
+    margin: 1em 0 1em 24.5em;
   }
 
+
   .headerchat-arriba {
-    width: auto;
+    width: 100%;
     height: auto;
-    background-color: #5ded0a;
+    padding: 6px 0 6px 0;
+    background-color: #5ad910;
+    border-radius: 0.5em 0.5em 0 0;
     display: flex;
     flex-direction: row;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
-  }
-  
-  .verMas-container {
-    width: 80%;
-    border-radius: 2em;
-    background-color: #ffffff;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 0 0 4em 0;
+    font-size: 1.8em;
   }
-  
-  .conversacion-abajo {
+
+  #texto {
+    width: 93%;
+  }
+
+  input[name='user-msg'] {
     width: 80%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 19;
-    font-size: 1.4em;
-    margin: 0;
   }
-  
-  .verMas-derecha {
-    width: 80%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    z-index: 19;
-    margin-bottom: 2.5em;
-    line-height: 1.2em;
-    font-size: 1em;
-  }
-  
-  .verMas-img {
-    width: auto;
-    height: 200px;
-    border-radius: 100%;
-    z-index: 19;
-  }
-  
-  #btn-chat {
-    border: none;
-    font-family: 'Josefin Sans';
-    font-size: 0.9em;
-    text-decoration: none;
-    color: white;
-    padding-top: 0.2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.2em;
-    text-align: center;
-    border-radius: 2em;
-    background-color: #ED8A0A;
-    cursor: pointer;
-  }
-  
-  div[itemprop="description"] {
-    margin: 1.5em 0 1.5em 0;
-  }
-  
-  /* --------------------- Desktop Design ------------------------- */
-    
-  @media (min-width: 992px) {
-  
-    *{
-      margin: 0;
-    }
-  
-    body{
-    font-family: 'Josefin Sans';
-    margin: 0;
-  }
-  
-  .verMas-container {
-    width: 80%;
-    border-radius: 2em;
-    background-color: #ffffff;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 4em 0;
-  }
-  
-  .verMas-izquierda {
-    width: 30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 19;
-    font-size: 1.4em;
-    margin: 0;
-  }
-  
-  .verMas-derecha {
-    width: 50%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    z-index: 19;
-    margin-bottom: 2.5em;
-    line-height: 1.2em;
-    font-size: 1em;
-  }
-  
-  }
+}
