@@ -1,7 +1,7 @@
 // En este archivo definirás tus rutas e importarás los componentes que vas a renderizar.
 import  Home from './views/Home.js';
 import  Error from './views/Error.js';
-import  ApiKey from './views/APIKey.js';
+import  ApiKeypage from './views/APIKey.js';
 import  verMas from './views/VerMas.js';
 import  chatIndividual from './views/ChatIndividual.js';
 /*import  ChatGrupal from './views/ChatGrupal.js';*/
@@ -15,7 +15,7 @@ import { setRootEl, setRoutes, onURLChange } from './router.js';
 const routes = {
   '/': Home,
   '/error': Error,
-  '/apikey': ApiKey,
+  '/apikey': ApiKeypage,
   '/vermas': (props) => verMas(props),
   '/chatindividual': chatIndividual,
   /*'/chatgrupal': ChatGrupal, */
