@@ -5,7 +5,6 @@ const seccRegistrate = () => {
   
 <!-- Desktop Regístrate -->
  
-    <section class="registrate">
       <div class="registrate-izquierda">
         <div class="txt-registrate">
           <h1>Regístrate</h1>
