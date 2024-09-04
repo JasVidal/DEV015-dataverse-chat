@@ -1,5 +1,6 @@
 import petsData from "../data/dataset.js";
 import { renderItems } from "./tarjetaContenido.js";
+import { navigateTo } from "../router.js";
 
 const seccTarjetas = () => {
   const tarjetas = document.createElement('section');
@@ -76,12 +77,17 @@ const seccTarjetas = () => {
         <img class="img-hueso3" src="./assets//hueso.png">
         <img class="img-hueso4" src="./assets//hueso.png">
         </div>
-
-        <button id="chat-grupal" class="fa-sharp fa-regular fa-comment xl" href="/chatgrupal">
-		</button>
+        <div class="btn-api-chat">
+        <button id="chat-grupal" class="fa-sharp fa-regular fa-comment xl" href="/chatgrupal"></button>
+        <button id="apikey" class="fa-solid fa-key" href="/apikey"></button>
+        </div>
       </section>
 `;
 
+const btnApikey = tarjetas.querySelector("#apikey");
+btnApikey.addEventListener('click', () => {
+  navigateTo ("/apikey")
+} )      
 
 const contenidoTarjetas = tarjetas.children[2].children[3]
 
