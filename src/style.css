@@ -456,7 +456,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 1.5em 0em 1.5em 0em;
+    margin: 1.5em 0em 0.5em 0em;
   }
 
   #ver-mas {
