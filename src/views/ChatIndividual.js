@@ -1,4 +1,5 @@
 import petsData from '../data/dataset.js';
+import communicateWithOpenAI from '../lib/openAIApi.js';
 
 const pageChatIndividual = (props) => {
   
@@ -32,14 +33,22 @@ const pet = petsData.find(item => item.id === props.id);
                 </article>
                 </div>        
                     <div id="texto">
-                    <input name="user-msg" type="text" id="user-msg" placeholder="Escribe aquí tu pregunta...">
-                    <i class="fa-solid fa-paper-plane fa-md"></i>
+                    <input class="chat-input" name="user-msg" type="text" id="user-msg" placeholder="Escribe aquí tu pregunta...">
+                    <button class="btnchatindividual-enviar">
+                    <i class="fa-solid fa-paper-plane fa-md"></i></button>
                     </div>
 
             </div>
         </div>
         </section>
     ` 
+    const chatInput = chatIndividual.querySelector('.chat-input');
+
+    const chatBtn = chatIndividual.querySelector('.btnchatindividual-enviar');
+    chatBtn.addEventListener('click', async() => {
+    const respuesta = await communicateWithOpenAI(chatInput.value);
+    console.log(respuesta.choices[0].message.content)
+});
     return chatIndividual;
 }
 

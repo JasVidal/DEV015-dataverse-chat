@@ -217,8 +217,18 @@ input[name='user-msg'] {
   cursor: pointer;
 }
 
+.btnchatindividual-enviar{
+  padding: 1em;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
 .fa-paper-plane {
   color:#6f6f6f;
+  font-size: 20px;
 }
 
 
