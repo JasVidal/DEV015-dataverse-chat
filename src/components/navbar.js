@@ -12,11 +12,11 @@ const seccNavbar = () => {
               <div class="btn-close" >
                   <li><i class="fa-solid fa-xmark"></i></li>
               </div>
-              <li>Inicio</li>
-              <li>Nosotros</li>
-              <li>Regístrate</li>
-              <li>Visítanos</li>
-              <li class="li-sidebar-donations">Dona aquí</li>
+              <li class="btnside-inicio">Inicio</li>
+              <li class="btnside-nosotros">Nosotros</li>
+              <li class="btnside-registrate">Regístrate</li>
+              <li class="btnside-visitanos">Visítanos</li>
+              <li class="liside-donations">Dona aquí</li>
           </ul>
 
       </aside>

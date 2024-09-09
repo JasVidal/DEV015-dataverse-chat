@@ -54,22 +54,38 @@ const Home = () => {
   
 }
 
-// Botón Navbar Nosotros //
+// Botón Navbar Mobile y Desktop Nosotros //
 
-const btnConocelos = homeContainer.querySelector('.btn-nosotros');
-const sectionNosotros = homeContainer.querySelector('.nosotros')
+const btnSideNosotros = homeContainer.querySelector('.btnside-nosotros');
+const btnNosotros = homeContainer.querySelector('.btn-nosotros');
+const sectionNosotros = homeContainer.querySelector('.nosotros');
 
-btnConocelos.addEventListener('click', () => {
+btnSideNosotros.addEventListener('click', () => {
   sectionNosotros.scrollIntoView({
   
     behavior: 'smooth'
   });
 });
 
-// Botón Navbar Regístrate //
+btnNosotros.addEventListener('click', () => {
+  sectionNosotros.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
 
+// Botón Navbar Mobile y Desktop Regístrate //
+
+const btnSideRegistrate = homeContainer.querySelector('.btnside-registrate');
 const btnRegistrate = homeContainer.querySelector('.btn-registrate');
-const sectionRegistrate = homeContainer.querySelector('.registrate')
+const sectionRegistrate = homeContainer.querySelector('.registrate');
+
+btnSideRegistrate.addEventListener('click', () => {
+  sectionNosotros.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
 
 btnRegistrate.addEventListener('click', () => {
   sectionRegistrate.scrollIntoView({
@@ -78,10 +94,18 @@ btnRegistrate.addEventListener('click', () => {
   });
 });
 
-// Botón Navbar Visítanos //
+// Botón Navbar Mobile y Desktop Visítanos //
 
+const btnSideVisitanos = homeContainer.querySelector('.btnside-visitanos');
 const btnVisitanos = homeContainer.querySelector('.btn-visitanos');
-const sectionVisitanos = homeContainer.querySelector('.visitanos')
+const sectionVisitanos = homeContainer.querySelector('.visitanos');
+
+btnSideVisitanos.addEventListener('click', () => {
+  sectionNosotros.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
 
 btnVisitanos.addEventListener('click', () => {
   sectionVisitanos.scrollIntoView({
@@ -90,12 +114,32 @@ btnVisitanos.addEventListener('click', () => {
   });
 });
 
+// Botón Navbar Dona Aquí //
+
+const btnSideDonaciones = homeContainer.querySelector('.liside-donations');
+const btnDonaciones = homeContainer.querySelector('.li-donations');
+const sectionDonaciones = homeContainer.querySelector('.donaciones');
+
+btnSideDonaciones.addEventListener('click', () => {
+  sectionNosotros.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
+
+btnDonaciones.addEventListener('click', () => {
+  sectionDonaciones.scrollIntoView({
+  
+    behavior: 'smooth'
+  });
+});
+
 // Botón Banner Conócelos //
 
-const btnNosotros = homeContainer.querySelector('#conocelos-btn');
-const sectionTarjetas = homeContainer.querySelector('#tarjetas-section')
+const btnConocelos = homeContainer.querySelector('#conocelos-btn');
+const sectionTarjetas = homeContainer.querySelector('#tarjetas-section');
 
-btnNosotros.addEventListener('click', () => {
+btnConocelos.addEventListener('click', () => {
   sectionTarjetas.scrollIntoView({
   
     behavior: 'smooth'
