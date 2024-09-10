@@ -13,7 +13,7 @@
     margin: 0;
     font-family: 'Josefin Sans';
   }
-  
+
 .apikey > .fa-circle-xmark {
   color: #ffffff;
   font-size: 40px;
@@ -22,7 +22,7 @@
   cursor: pointer;
   margin: 1em 0 0em 9.8em;
 }
-  
+
 .api-container {
     margin: 60px;
     background: #00a698;
