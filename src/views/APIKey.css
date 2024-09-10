@@ -4,15 +4,25 @@
 
 .apikey {
     width: auto;
-    height: 552px;
+    height: 624px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #6eed3c;
     margin: 0;
     font-family: 'Josefin Sans';
   }
-  
+
+.apikey > .fa-circle-xmark {
+  color: #ffffff;
+  font-size: 40px;
+  vertical-align: top;
+  text-align: right;
+  cursor: pointer;
+  margin: 1em 0 0em 9.8em;
+}
+
 .api-container {
     margin: 60px;
     background: #00a698;
