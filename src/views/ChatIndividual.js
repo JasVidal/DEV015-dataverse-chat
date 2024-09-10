@@ -42,11 +42,15 @@ const pet = petsData.find(item => item.id === props.id);
         </div>
         </section>
     ` 
+    const mensajeUser = chatIndividual.querySelector('.message_text_em'); 
     const chatInput = chatIndividual.querySelector('.chat-input');
-
     const chatBtn = chatIndividual.querySelector('.btnchatindividual-enviar');
+    const mensajePet = chatIndividual.querySelector('.message_text_rec'); 
+
     chatBtn.addEventListener('click', async() => {
+    mensajeUser.innerHTML = chatInput.value
     const respuesta = await communicateWithOpenAI(chatInput.value);
+    mensajePet.innerHTML = respuesta.choices[0].message.content
     console.log(respuesta.choices[0].message.content)
 });
     return chatIndividual;
