@@ -1,3 +1,4 @@
+import { getApiKey, setApiKey } from "../lib/apiKey.js";
 
 const seccApiKey = () => {
 
@@ -16,6 +17,9 @@ const seccApiKey = () => {
   </div>
     <button class="btn-regresar">Ir a Inicio</button>
   </div>`;
+
+  const obtenerApikey = getApiKey
+  const guardarApikey = setApiKey
 
   return ApiKey;
 }
