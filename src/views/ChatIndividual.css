@@ -196,6 +196,7 @@ input[name='user-msg'] {
   border: none;
   border-radius: 20px;
   margin: 0.5em;
+  font-family: 'Josefin Sans';
 }
 
 #texto::placeholder {
