@@ -21,15 +21,15 @@ const pet = petsData.find(item => item.id === props.id);
                     <i class="fa-solid fa-ellipsis-vertical fa-comment fa-md"></i>
             </header>
 
-                <div class="conversacion-abajo">
-                <article class ="message-emisor">
-                <p class="message_text_em"></p>
-                <i id="icono-em" class="fa-solid fa-user fa-md"></i>
+                <div class="conversacion">
+                <article class ="mensaje-usuario">
+                <p class="mensaje_text_usuario"></p>
+                <i id="icono-usuario" class="fa-solid fa-user fa-md"></i>
                 </article>
 
-                <article class ="message-receptor">
-                <img id="icono-rec" class="chatIndividual-img" src="${pet.imageUrl}">
-                <p class="message_text_rec"></p>
+                <article class ="mensaje-pet">
+                <img id="icono-pet" class="chatIndividual-img" src="${pet.imageUrl}">
+                <p class="mensaje_text_pet"></p>
                 </article>
                 </div>        
                     <div id="texto">
@@ -42,37 +42,56 @@ const pet = petsData.find(item => item.id === props.id);
         </div>
         </section>
     ` 
-    const iconoUser = chatIndividual.querySelector('#icono-em');
-    const mensajeUser = chatIndividual.querySelector('.message_text_em'); 
     const chatInput = chatIndividual.querySelector('.chat-input');
     const chatBtn = chatIndividual.querySelector('.btnchatindividual-enviar');
-    const iconoPet = chatIndividual.querySelector('#icono-rec');
-    const mensajePet = chatIndividual.querySelector('.message_text_rec'); 
 
-// Ocultar inicialmente los mensajes //
+    chatBtn.addEventListener('click', () => {
+        const txtInput = chatInput.value.trim();
 
-    iconoUser.style.display = 'none';
-    mensajeUser.style.display = 'none';
-    iconoPet.style.display = 'none';
-    mensajePet.style.display = 'none';
 
-// Mostrar el ícono y el mensaje del usuario //
+// Generar la respuesta de Pet //
 
-    chatBtn.addEventListener('click', async() => {
-    mensajeUser.innerHTML = chatInput.value;
-    iconoUser.style.display = 'block';
-    mensajeUser.style.display = 'block';
-    iconoPet.style.display = 'none';
-    mensajePet.style.display = 'none';
+        if (chatInput !== "") {
+            communicateWithOpenAI(txtInput)
+            .then(respuesta => {
+                const textoPet = respuesta.choices[0].message.content;
+                chatInput.value = " ";
+                ejemplo(textoPet, "pet")
+            }).catch();
+        }
+        ejemplo(txtInput, '')
+    })
 
-// Generar la respuesta y mostrar el ícono y mensaje del receptor //
+       const conversacion = chatIndividual.querySelector('.conversacion')
 
-    const respuesta = await communicateWithOpenAI(chatInput.value);
-    mensajePet.innerHTML = respuesta.choices[0].message.content;
-    iconoPet.style.display = 'block';
-    mensajePet.style.display = 'block';
-});
+    function ejemplo(text, sender) {
+        const cloneHTML = conversacion.cloneNode(true);
+
+        if (sender === "user") {
+            
+            const nuevoMensajeUsuario = conversacion.querySelector(".mensaje-usuario")
+            const iconoUsuario = chatIndividual.querySelector('#icono-usuario');
+            const mensajeUsuario = chatIndividual.querySelector('.mensaje_text_usuario');
+            
+            iconoUsuario.textContent = sender;
+            mensajeUsuario.textContent = text;
+
+            conversacion.appendChild(nuevoMensajeUsuario);
+
+        } else {
+            
+            const nuevoMensajePet = cloneHTML.querySelector(".mensaje-pet");
+            const mensajePet = chatIndividual.querySelector('.mensaje_text_pet');
+            const iconoPet = chatIndividual.querySelector('#icono-pet');
+
+            iconoPet.textContent = sender;
+            mensajePet.textContent = text;
+
+            conversacion.appendChild(nuevoMensajePet);
+
+        }
+
+};
     return chatIndividual;
-}
-
-export default pageChatIndividual;
+}   
+    export default pageChatIndividual;

@@ -2,11 +2,11 @@
 import { getApiKey } from './apiKey.js';
 
 
-async function communicateWithOpenAI (messages) {
+function communicateWithOpenAI (messages) {
    //Aquí es donde debes implementar la petición con fetch o axios
 
 
-const asincrona = await fetch('https://api.openai.com/v1/chat/completions', {
+return fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -24,8 +24,9 @@ const asincrona = await fetch('https://api.openai.com/v1/chat/completions', {
   
     })
 })
-return await asincrona.json()
 
+.then(promiseOpenAI => {return promiseOpenAI.json()})
+.catch(error => {('Error de API Key:', error)});
 
 };
 
