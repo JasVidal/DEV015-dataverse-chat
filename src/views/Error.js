@@ -1,10 +1,10 @@
 const Error = () => {
-    const error = document.createElement('section');
-    error.innerHTML = `
+  const error = document.createElement("section");
+  error.innerHTML = `
 <div>Error 404: Page Not Found</div>
 </section>`;
 
-return error;
-}
+  return error;
+};
 
-export default Error
+export default Error;

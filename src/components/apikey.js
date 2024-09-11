@@ -2,10 +2,9 @@ import { deleteApiKey, getApiKey, setApiKey } from "../lib/apiKey.js";
 import { navigateTo } from "../router.js";
 
 const seccApiKey = () => {
-
-  const contenedorApiKey = document.createElement('section');
+  const contenedorApiKey = document.createElement("section");
   contenedorApiKey.className = "apikey";
-  
+
   contenedorApiKey.innerHTML = `
   <i id="btn-cerrar" class="fa-solid fa-circle-xmark"></i>
   <div class="api-container">
@@ -19,26 +18,23 @@ const seccApiKey = () => {
     <button class="btn-regresar">Ir a Inicio</button>
   </div>`;
 
-
-  const inputApikey = contenedorApiKey.querySelector('.input-api');
-  const btnGuardarApi = contenedorApiKey.querySelector('.btn-guardar');
-  const btnLimpiarApi = contenedorApiKey.querySelector('.btn-limpiar');
- 
+  const inputApikey = contenedorApiKey.querySelector(".input-api");
+  const btnGuardarApi = contenedorApiKey.querySelector(".btn-guardar");
+  const btnLimpiarApi = contenedorApiKey.querySelector(".btn-limpiar");
 
   const staticApi = () => {
     const obtenerApi = getApiKey();
-    if(obtenerApi) {
+    if (obtenerApi) {
       inputApikey.value = obtenerApi;
     }
-  }
-  staticApi()
+  };
+  staticApi();
 
   // Botón Guardar API Key //
 
-  btnGuardarApi.addEventListener('click', () => {
-  
+  btnGuardarApi.addEventListener("click", () => {
     // Guarda el valor en input //
-    setApiKey(inputApikey.value)
+    setApiKey(inputApikey.value);
 
     // Recupera lo guardado en setApiKey //
     const recuperarApiKey = getApiKey();
@@ -46,33 +42,32 @@ const seccApiKey = () => {
     if (recuperarApiKey) {
       inputApikey.value = `${recuperarApiKey}`;
     } else {
-      alert('Clave incorrecta')
+      alert("Clave incorrecta");
     }
-  }
-)  
+  });
 
-// Botón Limpiar API Key //
+  // Botón Limpiar API Key //
 
-btnLimpiarApi.addEventListener('click', () => {
-  deleteApiKey();
-  inputApikey.value = '';
-})
+  btnLimpiarApi.addEventListener("click", () => {
+    deleteApiKey();
+    inputApikey.value = "";
+  });
 
-// Botón volver a Home //
+  // Botón volver a Home //
 
-const btnRegresar = contenedorApiKey.querySelector(".btn-regresar");
-        btnRegresar.addEventListener('click', () => {
-          navigateTo ("/")
-        } )     
+  const btnRegresar = contenedorApiKey.querySelector(".btn-regresar");
+  btnRegresar.addEventListener("click", () => {
+    navigateTo("/");
+  });
 
-// Botón cerrar y volver al Home //
+  // Botón cerrar y volver al Home //
 
   const btnCerrar = contenedorApiKey.querySelector("#btn-cerrar");
-        btnCerrar.addEventListener('click', () => {
-          navigateTo ("/")
-        } )     
+  btnCerrar.addEventListener("click", () => {
+    navigateTo("/");
+  });
 
   return contenedorApiKey;
-}
+};
 
 export default seccApiKey;

@@ -3,8 +3,8 @@ let rootEl;
 
 export const setRootEl = (el) => {
   rootEl = el;
-  return rootEl
-}
+  return rootEl;
+};
 
 export const setRoutes = (routes) => {
   // Opcional: arroja errores si las rutas no son un objeto
@@ -18,24 +18,22 @@ export const setRoutes = (routes) => {
     throw new Error("Routes debe definir una ruta /error");
   }
 
-  return ROUTES = routes;
-}
+  return (ROUTES = routes);
+};
 
 const renderView = (pathname, props = {}) => {
-
   // limpia el elemento root
   // busque la vista correcta en RUTAS para la ruta pathname
   // en caso de no encontrarlo renderiza la vista de error
   // renderiza la vista correcta pasando el valor de las propiedades
   // agrega el elemento de vista al elemento root del DOM
-  root.innerHTML = '';
+  root.innerHTML = "";
 
   if (ROUTES[pathname]) {
     root.replaceChildren(ROUTES[pathname](props));
+  } else {
+    root.replaceChildren(ROUTES["/Error"]());
   }
-    else {
-      root.replaceChildren(ROUTES["/Error"]());
-    }
 };
 
 export const onURLChange = (location) => {
@@ -46,20 +44,18 @@ export const onURLChange = (location) => {
   const { pathname, search } = location;
   const props = queryStringToObject(search);
   renderView(pathname, props);
-}
+};
 
-
-  const queryStringToObject = (queryString) => {
+const queryStringToObject = (queryString) => {
   // convert query string to URLSearchParams
   // convert URLSearchParams to an object
   // return the object
   const params = new URLSearchParams(queryString);
   const paramsObject = Object.fromEntries(params);
   return paramsObject;
-}
+};
 
-export const navigateTo = (pathname, props={}) => {
-  
+export const navigateTo = (pathname, props = {}) => {
   const queryString = Object.keys(props).length
     ? `?${new URLSearchParams(props)}`
     : "";
@@ -70,4 +66,4 @@ export const navigateTo = (pathname, props={}) => {
   window.history.pushState(props, "", url);
   // render the view with the pathname and props
   renderView(pathname, props);
-}
+};

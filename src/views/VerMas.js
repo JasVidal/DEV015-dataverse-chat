@@ -1,13 +1,12 @@
-import petsData from '../data/dataset.js';
-import { navigateTo } from '../router.js';
+import petsData from "../data/dataset.js";
+import { navigateTo } from "../router.js";
 
 const seccVerMas = (props) => {
-
-  const pet = petsData.find(item => item.id === props.id);
+  const pet = petsData.find((item) => item.id === props.id);
 
   // Convertir la edad a meses
   const { years, months } = pet.facts.age;
-  const totalMonths = (years * 12) + months;
+  const totalMonths = years * 12 + months;
 
   let ageDisplay;
   if (totalMonths < 12) {
@@ -15,9 +14,9 @@ const seccVerMas = (props) => {
   } else {
     ageDisplay = `${years} año(s)`;
   }
-  
-  const verMas = document.createElement('section');
-     verMas.className = "verMas";
+
+  const verMas = document.createElement("section");
+  verMas.className = "verMas";
 
   verMas.innerHTML = `
           <i id="btn-cerrar" class="fa-solid fa-circle-xmark"></i>
@@ -42,18 +41,18 @@ const seccVerMas = (props) => {
         </section>
     `;
 
-    // Botón cerrar y volver al Home //
+  // Botón cerrar y volver al Home //
 
-    const btnCerrar = verMas.querySelector("#btn-cerrar");
-    btnCerrar.addEventListener('click', () => {
-        navigateTo ("/")
-    } )  
+  const btnCerrar = verMas.querySelector("#btn-cerrar");
+  btnCerrar.addEventListener("click", () => {
+    navigateTo("/");
+  });
 
-    const btnElement = verMas.querySelector("#btn-chat");
-    btnElement.addEventListener('click', () => {
-      navigateTo ("/chatindividual", {id:pet.id})
-    } )
-    return verMas;
-}
+  const btnElement = verMas.querySelector("#btn-chat");
+  btnElement.addEventListener("click", () => {
+    navigateTo("/chatindividual", { id: pet.id });
+  });
+  return verMas;
+};
 
 export default seccVerMas;
