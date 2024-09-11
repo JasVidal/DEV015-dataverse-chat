@@ -1,4 +1,5 @@
 import petsData from '../data/dataset.js';
+import { navigateTo } from '../router.js';
 
 const seccVerMas = (props) => {
 
@@ -19,7 +20,7 @@ const seccVerMas = (props) => {
      verMas.className = "verMas";
 
   verMas.innerHTML = `
-          <i class="fa-solid fa-circle-xmark"></i>
+          <i id="btn-cerrar" class="fa-solid fa-circle-xmark"></i>
             <div class="verMas-container">
                 <div class="verMas-izquierda">
                     <div itemprop="verMas-img">
@@ -40,6 +41,18 @@ const seccVerMas = (props) => {
             </div>
         </section>
     `;
+
+    // Botón cerrar y volver al Home //
+
+    const btnCerrar = verMas.querySelector("#btn-cerrar");
+    btnCerrar.addEventListener('click', () => {
+        navigateTo ("/")
+    } )  
+
+    const btnElement = verMas.querySelector("#btn-chat");
+    btnElement.addEventListener('click', () => {
+      navigateTo ("/chatindividual", {id:pet.id})
+    } )
     return verMas;
 }
 
