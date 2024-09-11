@@ -23,18 +23,9 @@ const pet = petsData.find(item => item.id === props.id);
             </header>
 
                 <div class="conversacion">
+                
+                </div>    
 
-                <article class ="mensaje-pet">
-                <img id="icono-pet" class="chatIndividual-img" src="${pet.imageUrl}">
-                <p class="mensaje_text_pet"> ¡Hola! Mi nombre es ${pet.name} y estoy feliz de conocerte (:</p>
-                </article>
-
-                <article class ="mensaje-usuario">
-                <p class="mensaje_text_usuario">...</p>
-                <i id="icono-usuario" class="fa-solid fa-user fa-md"></i>
-                </article>
-
-                </div>        
                     <div id="texto">
                     <input class="chat-input" name="user-msg" type="text" id="user-msg" placeholder="Escribe aquí tu pregunta...">
                     <button class="btnchatindividual-enviar">
@@ -48,18 +39,6 @@ const pet = petsData.find(item => item.id === props.id);
     const chatInput = chatIndividual.querySelector('.chat-input');
     const chatBtn = chatIndividual.querySelector('.btnchatindividual-enviar');
 
-    const iconoUsuario = chatIndividual.querySelector('#icono-usuario');
-    const txtUsuario = chatIndividual.querySelector('.message_text_usuario'); 
-    const iconoPet = chatIndividual.querySelector('#icono-pet');
-    const txtPet = chatIndividual.querySelector('.message_text_pet');
-
-   
-/*     document.addEventListener('DOMContentLoaded', () => {
-    iconoUsuario.style.display = 'none';
-    txtUsuario.style.display = 'none';
-    iconoPet.style.display = 'none';
-    txtPet.style.display = 'none'; }) */
-
     // Botón cerrar y volver al Home //
 
     const btnCerrar = chatIndividual.querySelector("#btn-cerrar");
@@ -71,19 +50,14 @@ const pet = petsData.find(item => item.id === props.id);
 
     chatBtn.addEventListener('click', () => {
         const txtInput = chatInput.value.trim();
-       
-/*         iconoUsuario.style.display = 'block';
-        txtUsuario.style.display = 'block'; */
 
     // Generar la respuesta de Pet //
 
         if (chatInput !== "") {
-            communicateWithOpenAI(txtInput)
+            communicateWithOpenAI(txtInput, pet)
             .then(respuesta => {
                 const textoPet = respuesta.choices[0].message.content;
                 chatInput.value = " ";
-/*                 iconoPet.style.display = 'block';
-                txtPet.style.display = 'block'; */
                 ejemplo(textoPet, 'pet')
             }).catch();
         }
@@ -96,23 +70,24 @@ const pet = petsData.find(item => item.id === props.id);
         const cloneHTML = conversacion.cloneNode(true);
 
         if (sender === "usuario") {
-            
-            const nuevoMensajeUsuario = cloneHTML.querySelector(".mensaje-usuario")
-            const iconoUsuario = nuevoMensajeUsuario.querySelector('#icono-usuario');
-            const mensajeUsuario = nuevoMensajeUsuario.querySelector('.mensaje_text_usuario');
-            
-            mensajeUsuario.textContent = text;
 
-            conversacion.appendChild(nuevoMensajeUsuario);
+            const nuevoMensajeUsuario = document.createElement('article');
+            nuevoMensajeUsuario.className = 'mensaje-usuario';
+            nuevoMensajeUsuario.innerHTML = `
+                <p class="mensaje_text_usuario">${text}</p>
+                <i id="icono-usuario" class="fa-solid fa-user fa-md"></i>
+            `;
+
+            conversacion.appendChild(nuevoMensajeUsuario); 
 
         } else {
             
-            const nuevoMensajePet = cloneHTML.querySelector(".mensaje-pet");
-            const iconoPet = nuevoMensajePet.querySelector('#icono-pet');
-            const mensajePet = nuevoMensajePet.querySelector('.mensaje_text_pet');
-
-            iconoPet.textContent = sender;
-            mensajePet.textContent = text;
+            const nuevoMensajePet = document.createElement('article');
+            nuevoMensajePet.className = 'mensaje-pet';
+            nuevoMensajePet.innerHTML = `
+                <img id="icono-pet" class="chatIndividual-img" src="${pet.imageUrl}">
+                <p class="mensaje_text_pet">${text}</p>
+            `;
 
             conversacion.appendChild(nuevoMensajePet);
 
