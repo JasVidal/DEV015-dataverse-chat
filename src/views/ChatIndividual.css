@@ -90,11 +90,12 @@
   text-align: center;
   z-index: 19;
   font-size: 1.4em;
-  margin: 0;
+  margin: 1em;
+  overflow-y: scroll;
 }
 
 .mensaje-pet {
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 0.2em;
   background-color: transparent;
@@ -128,7 +129,7 @@
 }
 
 .mensaje-usuario {
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 0.2em;
   background-color: transparent;
@@ -148,7 +149,6 @@
   border-radius: 50%;
   border: none;
   background-color: #8556B3;
-
 }
 
 .mensaje_text_usuario {
@@ -246,7 +246,7 @@ input[name='user-msg'] {
   font-family: 'Josefin Sans';
   margin: 0;
   }
-
+  
   .fa-circle-xmark {
     color: #ffffff;
     font-size: 40px;
