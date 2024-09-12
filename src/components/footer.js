@@ -1,7 +1,7 @@
 const seccFooter = () => {
-    const footer = document.createElement('footer');
-    footer.className = "footer";
-    footer.innerHTML = `
+  const footer = document.createElement('footer');
+  footer.className = "footer";
+  footer.innerHTML = `
   
         <div class="column">
       <a href="#">Inicio</a>
@@ -23,7 +23,7 @@ const seccFooter = () => {
     </div>
 
   </footer>`;
-    return footer;
-  }
+  return footer;
+}
   
-  export default seccFooter;
+export default seccFooter;

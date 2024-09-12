@@ -1,7 +1,7 @@
 const seccVisitanos = () => {
-    const visitanos = document.createElement('section');
-    visitanos.className = "visitanos";
-    visitanos.innerHTML = `
+  const visitanos = document.createElement('section');
+  visitanos.className = "visitanos";
+  visitanos.innerHTML = `
   
 <!-- Desktop Visítanos -->
 
@@ -21,7 +21,7 @@ const seccVisitanos = () => {
           </div>
       </div>
     </section>`;
-    return visitanos;
-  }
+  return visitanos;
+}
   
-  export default seccVisitanos;
+export default seccVisitanos;

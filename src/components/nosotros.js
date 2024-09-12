@@ -1,7 +1,7 @@
 const seccNosotros = () => {
-    const nosotros = document.createElement('section');
-    nosotros.className = "nosotros";
-    nosotros.innerHTML = `
+  const nosotros = document.createElement('section');
+  nosotros.className = "nosotros";
+  nosotros.innerHTML = `
   
 <!-- Desktop Nosotros -->
 
@@ -19,7 +19,7 @@ const seccNosotros = () => {
           </div>
       </div>
     </section>`;
-    return nosotros;
-  }
+  return nosotros;
+}
   
-  export default seccNosotros;
+export default seccNosotros;

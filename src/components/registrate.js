@@ -1,7 +1,7 @@
 const seccRegistrate = () => {
-    const registrate = document.createElement('section');
-    registrate.className = "registrate";
-    registrate.innerHTML = `
+  const registrate = document.createElement('section');
+  registrate.className = "registrate";
+  registrate.innerHTML = `
   
 <!-- Desktop Regístrate -->
  
@@ -23,7 +23,7 @@ const seccRegistrate = () => {
       </div>
     </div>    
     </section>`;
-    return registrate;
-  }
+  return registrate;
+}
   
-  export default seccRegistrate;
+export default seccRegistrate;

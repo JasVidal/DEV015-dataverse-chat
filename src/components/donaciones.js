@@ -1,7 +1,7 @@
 const seccDonaciones = () => {
-    const donaciones = document.createElement('section');
-    donaciones.className = "donaciones";
-    donaciones.innerHTML = `
+  const donaciones = document.createElement('section');
+  donaciones.className = "donaciones";
+  donaciones.innerHTML = `
   
 <!-- Desktop Dona Aquí -->
 
@@ -23,7 +23,7 @@ const seccDonaciones = () => {
           <button id="plan-btn">Plan Anual</button>
       </div>
     </section>`;
-    return donaciones;
-  }
+  return donaciones;
+}
   
-  export default seccDonaciones;
+export default seccDonaciones;

@@ -84,14 +84,14 @@ const seccTarjetas = () => {
       </section>
 `;
 
-const btnApikey = tarjetas.querySelector("#apikey");
-btnApikey.addEventListener('click', () => {
-  navigateTo ("/apikey")
-} )      
+  const btnApikey = tarjetas.querySelector("#apikey");
+  btnApikey.addEventListener('click', () => {
+    navigateTo ("/apikey")
+  } )      
 
-const contenidoTarjetas = tarjetas.children[2].children[3]
+  const contenidoTarjetas = tarjetas.children[2].children[3]
 
-contenidoTarjetas.appendChild(renderItems(petsData))
+  contenidoTarjetas.appendChild(renderItems(petsData))
   return tarjetas;
 }
 

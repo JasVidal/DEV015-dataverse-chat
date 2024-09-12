@@ -1,7 +1,7 @@
 const seccBanner = () => {
-    const banner = document.createElement('section');
-    banner.className = "banner";
-    banner.innerHTML = `
+  const banner = document.createElement('section');
+  banner.className = "banner";
+  banner.innerHTML = `
   
 <!-- Desktop Banner -->
 
@@ -21,7 +21,7 @@ const seccBanner = () => {
       </div>
 
     </section>`;
-    return banner;
-  }
+  return banner;
+}
   
-  export default seccBanner;
+export default seccBanner;
