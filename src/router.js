@@ -27,6 +27,7 @@ const renderView = (pathname, props = {}) => {
   // en caso de no encontrarlo renderiza la vista de error
   // renderiza la vista correcta pasando el valor de las propiedades
   // agrega el elemento de vista al elemento root del DOM
+  const root = rootEl
   root.innerHTML = "";
 
   if (ROUTES[pathname]) {

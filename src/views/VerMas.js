@@ -10,7 +10,7 @@ const seccVerMas = (props) => {
 
   let ageDisplay;
   if (totalMonths < 12) {
-    ageDisplay = `${months} mes(es)`;
+    ageDisplay = `${months} mes(es)S`;
   } else {
     ageDisplay = `${years} año(s)`;
   }
@@ -30,7 +30,7 @@ const seccVerMas = (props) => {
                 </div>
                 <div class="verMas-derecha">
                     <div itemprop="description">${pet.description}</div>
-                    <div itemprop="age">Edad: ${pet.ageDisplay}</div>
+                    <div itemprop="age">Edad: ${ageDisplay}</div>
                     <div itemprop="gender">Género: ${pet.facts.gender}</div>
                     <div itemprop="breed">Raza: ${pet.facts.breed}</div>
                     <div itemprop="size">Tamaño: ${pet.facts.size}</div>

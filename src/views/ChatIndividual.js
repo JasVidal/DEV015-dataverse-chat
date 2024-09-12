@@ -63,7 +63,7 @@ const pageChatIndividual = (props) => {
 
   function ejemplo(text, sender) {
     const conversacion = chatIndividual.querySelector(".conversacion");
-    const cloneHTML = conversacion.cloneNode(true);
+    conversacion.cloneNode(true);
 
     if (sender === "usuario") {
       const nuevoMensajeUsuario = document.createElement("article");

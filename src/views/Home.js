@@ -155,8 +155,8 @@ const Home = () => {
 
   homeContainer.addEventListener("load", () => {
     const pets = showPets();
+    const root = document.getElementById('contenido-tarjetas')
     root.appendChild(renderItems(pets));
-    console.log(document.getElementById("contenido-tarjetas"));
   });
 
   //------------ Sección tarjetas - Funciones de Filtrado y Botón Limpiar ------------//
