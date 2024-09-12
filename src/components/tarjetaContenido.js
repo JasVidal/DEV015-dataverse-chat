@@ -1,4 +1,5 @@
 import { navigateTo } from "../router.js";
+import { getApiKey } from "../lib/apiKey.js";
 
 export const renderItems = (pets) => {
   const ul = document.createElement("ul");
@@ -48,7 +49,11 @@ export const renderItems = (pets) => {
 
     const btnElement = petItem.querySelector(".btn-chat");
     btnElement.addEventListener('click', () => {
+      if (getApiKey()) {
       navigateTo ("/chatindividual", {id:pet.id})
+    } else {
+      navigateTo ("/apikey")
+    }
     } )
     ul.appendChild(petItem);
   });
