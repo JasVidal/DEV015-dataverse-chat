@@ -11,7 +11,7 @@ const Error = () => {
 </div>
   </section>`;
 
-// Botón volver a Home //
+  // Botón volver a Home //
 
   const btnInicio = error.querySelector(".btn-volver");
   btnInicio.addEventListener("click", () => {
