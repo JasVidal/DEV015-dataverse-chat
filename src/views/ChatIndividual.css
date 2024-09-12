@@ -31,7 +31,7 @@
   vertical-align: top;
   text-align: right;
   cursor: pointer;
-  margin: 1em 0 1em 10.5em;
+  margin: 1em 0 1em 12em;
 }
 
 .chatin-container {
@@ -253,9 +253,22 @@ input[name='user-msg'] {
     vertical-align: top;
     text-align: right;
     cursor: pointer;
-    margin: 1em 0 1em 24.5em;
+    margin: 1em 0 1em 26em;
   }
 
+  .conversacion {
+    width: 90%;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 19;
+    font-size: 1.4em;
+    margin: 1em;
+    overflow-y: scroll;
+  }
 
   .headerchat-arriba {
     width: 100%;
