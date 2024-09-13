@@ -119,39 +119,42 @@ Para lograr esta flexibilidad, he implementado diversas técnicas de diseño y d
 ### Formato Mobile
 
 <div align="center">
-<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Mobile%2FiPhone-13-PRO-127.0.0.1.png?alt=media&token=f00f07d3-2969-4f31-b6cf-b19270ccf642">
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%201.png?alt=media&token=415a1752-cd4f-47f7-abb6-c5043f62ae27">
 
-<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Mobile%2FiPhone-13-PRO-127.0.0.1%20(2).png?alt=media&token=3b7953ad-d53a-4f83-a341-7f6e1dbe8e9c">
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%202.png?alt=media&token=f9ac6634-b3ae-45a0-9e4d-d0f57d223b6a">
 
-<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Mobile%2FiPhone-13-PRO-127.0.0.1%20(1).png?alt=media&token=50b1b6a6-59ae-457e-8f88-bae5db2f7dd9">
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%203.png?alt=media&token=fbb247af-1e6a-46c4-9328-6fd480f60aa6">
 
-<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Mobile%2FiPhone-13-PRO-127.0.0.1%20(3).png?alt=media&token=9d068511-3dc1-4009-aebb-ed510917c5ab">
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%204.png?alt=media&token=e09fc665-f602-4b14-a385-0ccb53ce5fad">
+
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%205.png?alt=media&token=0f1307a7-4dbd-4e40-ae4e-da4adb4d03ae">
+
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%206.png?alt=media&token=746182f7-88f7-4914-9d03-1a68526e6104">
+
+<img width="100" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fmobile%207.png?alt=media&token=eeb8e80f-83ae-4fb0-8c39-99d68017f58f">
 </div>
 <br><br><br>
 
 ### Formato Tablet
 
 <div align="center">
-<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Tablet%2FiPad-PRO-11-127.0.0.1.png?alt=media&token=f172b3ef-545b-4913-bcdd-08c8a532f516">
+<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Ftablet%201.png?alt=media&token=33209b1d-e412-452d-ba8b-de63adf426eb">
 
-<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Tablet%2FiPad-PRO-11-127.0.0.1%20(1).png?alt=media&token=4479e82a-5d37-4361-89b2-0c602cd8d77c">
+<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Ftablet%202.png?alt=media&token=9cfce3e4-5fb6-4b24-947c-4b3f99a91ab7">
 <br><br><br><br>
-<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Tablet%2FiPad-PRO-11-127.0.0.1%20(3).png?alt=media&token=b3c214c0-3d19-4793-9b28-90c1cf2147f1">
-
-<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Tablet%2FiPad-PRO-11-127.0.0.1%20(2).png?alt=media&token=ef17017e-6fe5-4753-bf40-d187bc1fd171">
-</div>
+<img width="200" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Ftablet%203.png?alt=media&token=41bed580-ac8d-4048-af49-bc1248f94756"></div>
 <br><br><br>
 
 ### Formato Desktop
 
 <div align="center">
-<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Desktop%2FMacbook-Air-127.0.0.1.png?alt=media&token=a01dcad0-6ce8-4492-8dbf-702bad59ee1d">
+<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fdesktop%201.png?alt=media&token=632ee82b-3453-4e9c-ac67-a91421e68c04">
 
-<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Desktop%2FMacbook-Air-127.0.0.1%20(1).png?alt=media&token=dbf45950-acbf-4be1-8f86-cc2b4393f35f">
+<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fdesktop%202.png?alt=media&token=47959c64-5ef6-4e2d-8829-8f24b0c74cae">
 <br><br><br><br>
-<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Desktop%2FMacbook-Air-127.0.0.1%20(3).png?alt=media&token=48ff6875-2b57-4442-8b66-b2e6153a724b">
+<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fdesktop%203.png?alt=media&token=de0fb889-90a0-4ef1-82ec-6994831cb43f">
 
-<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Im%C3%A1genes%20README%2FFormato%20Desktop%2FMacbook-Air-127.0.0.1%20(2).png?alt=media&token=7dcfff2f-115d-4554-a81d-e83bb7fe937c">
+<img width="400" height="auto" align="center" src="https://firebasestorage.googleapis.com/v0/b/almacenamiento-jas.appspot.com/o/Dataverse%20Chat%2Fdesltop%204.png?alt=media&token=32084250-7f87-47ad-ada3-6ab39ca9be86">
 </div>
 
 <br><br><br><br>
@@ -168,7 +171,7 @@ Para lograr esta flexibilidad, he implementado diversas técnicas de diseño y d
 - **Jest:** Herramienta empleada para realizar pruebas unitarias y con mocks, asegurando la calidad y el funcionamiento correcto del código.
 - **Github:** Plataforma para la gestión de proyectos, el seguimiento de historias de usuario y la resolución de problemas, proporcionando un entorno colaborativo y organizado.
 - **Figma:** Herramienta de prototipado y diseño de interfaces que permite la creación de prototipos de alta fidelidad, facilitando pruebas de usabilidad y visualización de conceptos.
-<br><br>
+<br><br><br><br>
   <div align="center">
   <img src="https://i.giphy.com/XAxylRMCdpbEWUAvr8.webp" width="100">
   <img src="https://i.giphy.com/fsEaZldNC8A1PJ3mwp.webp" width="100">
