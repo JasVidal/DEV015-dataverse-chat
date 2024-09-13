@@ -9,7 +9,7 @@ const seccApiKey = () => {
   <i id="btn-cerrar" class="fa-solid fa-circle-xmark"></i>
   <div class="api-container">
   <img src="./assets/Logo.svg">
-  <h1>Disfruta de  una conversación agradable con todas las mascotas de Monito o ten una linda charla y conoce más a tu mascota preferida. Ingresa tu API Key y descubre mucho más sobre ellos.</h1>
+  <h1 class="h1-api">Disfruta de  una conversación agradable con todas las mascotas de Monito o ten una linda charla y conoce más a tu mascota preferida. Ingresa tu API Key y descubre mucho más sobre ellos.</h1>
   <input class="input-api" type="password" placeholder="Ingresa aquí tu API Key"></i>
   <div class="botones"> 
     <button class="btn-limpiar">Limpiar</button>
