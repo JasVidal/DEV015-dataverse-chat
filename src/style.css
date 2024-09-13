@@ -556,10 +556,10 @@
     width: 100%;
     height: auto;
     background-color: #ffc42f;
-    display: flex;
-    flex-direction: column; /*ponerlo en columna*/
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
   }
   
   .nosotros-izquierda {
@@ -756,10 +756,10 @@
     width: 100%;
     height: auto;
     background-color: #34C5DF;
-    display: flex;
-    flex-direction: column; /*ponerlo en columna*/
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
   }
   
   .visitanos-izquierda {
@@ -818,7 +818,7 @@
   }
   
   .visitanos-derecha {
-    width: 50%;
+    width: 60%;
     height: 470px;
     text-align: center;
     z-index: 19;
