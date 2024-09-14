@@ -171,7 +171,7 @@ Para lograr esta flexibilidad, he implementado diversas técnicas de diseño y d
 - **Jest:** Herramienta empleada para realizar pruebas unitarias y con mocks, asegurando la calidad y el funcionamiento correcto del código.
 - **Github:** Plataforma para la gestión de proyectos, el seguimiento de historias de usuario y la resolución de problemas, proporcionando un entorno colaborativo y organizado.
 - **Figma:** Herramienta de prototipado y diseño de interfaces que permite la creación de prototipos de alta fidelidad, facilitando pruebas de usabilidad y visualización de conceptos.
-<br><br><br><br><br>
+<br><br><br><br>
   <div align="center">
   <img src="https://i.giphy.com/XAxylRMCdpbEWUAvr8.webp" width="100">
   <img src="https://i.giphy.com/fsEaZldNC8A1PJ3mwp.webp" width="100">
