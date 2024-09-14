@@ -3,7 +3,7 @@ import petsData from "../data/dataset.js";
 import { renderItems } from "../components/tarjetaContenido.js";
 import seccNavbar from "../components/navbar.js";
 import seccBanner from "../components/banner.js";
-import seccTarjetas from "../components/Tarjetas.js";
+import seccTarjetas from "../components/tarjetas.js";
 import seccNosotros from "../components/nosotros.js";
 import seccRegistrate from "../components/registrate.js";
 import seccVisitanos from "../components/visitanos.js";

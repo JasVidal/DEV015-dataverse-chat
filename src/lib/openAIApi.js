@@ -1,3 +1,4 @@
+//promesa - valor disponible ahora o futuro hago uso de promesas con fetch, then y catch
 // Importa la función para obtener la API KEY desde apiKey.js
 import { getApiKey } from "./apiKey.js";
 
@@ -25,10 +26,10 @@ export const communicateWithOpenAI = (messages, pet) => {
       temperature: 0.9,
     }),
   })
-    .then((promiseOpenAI) => {
+    .then((promiseOpenAI) => { //verificar respuesta válida
       return promiseOpenAI.json();
     })
-    .catch((error) => {
+    .catch((error) => { // maneja errores
       "Error de API Key:", error;
     });
 };
